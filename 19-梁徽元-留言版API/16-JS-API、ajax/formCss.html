@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title_input {
+            border:none;
+            color:white;
+            width:98%;
+            padding:1%;
+            font-size:30px;
+        }
+
+        .title_input:disabled {
+            background-color:white;
+        }
+
+        .title_input::placeholder {
+            /* color:white; */
+        }
+
+        label {
+            display:flex;
+            width:30px;
+            height:30px;
+            background-color:red;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        label span {
+            display:none;
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+
+        span.block {
+            display:inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <input placeholder="請輸入一段文字" class="title_input" type="text"> -->
+    <!-- placeholder = 提示 -->
+
+
+    <!-- <label for="#title">姓名:</label>
+    <input id="title" type="text"> -->
+    <!-- 語意標籤->網站的SEO排名 -->
+
+    <label for="#aaa">
+        <span></span>
+    </label>
+    <input hidden id="aaa" type="radio" name="title">
+
+    <label for="#bbb">
+        <span></span>
+    </label>
+    <input id="bbb" type="radio" name="title">
+
+    <label for="#ccc">
+        <span></span>
+    </label>
+    <input id="ccc" type="radio" name="title">
+
+    <label for="#ddd">
+        <span></span>
+    </label>
+    <input id="ddd" type="radio" checked name="title">
+    <!-- 單選按鈕需要靠name標籤屬性才能變成一個組 -->
+
+
+    <!-- <input type="checkbox" name="location">
+    <input type="checkbox" name="location">
+    <input type="checkbox" name="location">
+    <input type="checkbox" name="location">
+    <input type="checkbox" name="location">
+    <input type="checkbox" name="location"> -->
+    <!-- checkbox的預設值 = checked -->
+
+    <!-- checkbox radio 很難改變樣式 = 80%的CSS屬性無法作用 -->
+
+
+    <script>
+        document.querySelector('label').onclick = function(){
+            document.querySelector('label span').classList.add('block')
+            document.querySelector('#aaa').setAttribute('checked','true')
+            //設定input屬性,需要加上布林值
+        }
+    </script>
+</body>
+</html>

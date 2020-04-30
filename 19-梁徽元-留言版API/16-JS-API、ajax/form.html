@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action = 資料送去指定的網址 -->
+
+    <!-- POST = 傳送加密的資料,身分證、密碼->傳送資料都用post -->
+    <!-- GET = 傳送相對不重要的資料->搜尋 -->
+    <!-- 原因: GET傳送資料會把"請求"寫在網址,POST會隱藏在網頁後進行傳送 -->
+    <form action="http://www.go_to_somewhere.com" method="GET">
+
+        <!-- 透過type改變input樣式 -->
+        <input type="text" name="title" required>
+        <!-- name = 資料庫存放資料的欄位 -->
+        
+        <input type="password" required>
+        <!-- require = 要求使用者必須填入的驗證功能 -->
+        
+        <input type="email" value="123456798">
+        <!-- value = 預設數值 -->
+        
+        <input type="text" value="123456798" readonly>
+        <!-- readonly = 只能讓使用者看內容,無法修改 -->
+
+        <input type="radio">
+        <input type="checkbox">
+
+
+
+        <textarea name="" required cols="30" rows="10"></textarea>
+        <!-- textarea沒有value屬性,其餘都跟input相同 -->
+
+
+
+        <select name="" id="">
+            <option value="123">123</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option selected value="3">3</option>
+        </select>
+        <!-- value必須先填,送出表單不會以選項文字做為value送出 -->
+        <!-- selected = 預設值 -->
+
+
+
+        <button type="reset">清空資料</button>
+        <button type="submit" >點我送出資料!!</button>
+        <!-- disabled = 暫時關閉select、input、button的功能,常透過JS驗證表單內容暫時關閉送出按鈕 -->
+    </form>
+
+
+    <script>
+
+        {
+            'title'='123',
+            'password'='123'
+        }
+
+
+    </script>
+
+</body>
+</html>
