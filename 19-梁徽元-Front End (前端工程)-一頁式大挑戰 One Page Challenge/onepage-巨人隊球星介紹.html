@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巨人隊球星介紹</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            min-width: 375px;
+        }
+        
+        a {
+            width: 31%;
+            text-decoration: none;
+        }
+        /* 13 */
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .main {
+            background-color: #EF4B23;
+            position: relative;
+        }
+        
+        .contain {
+            width: 100%;
+            max-width: 1140px;
+            margin: auto;
+            display: flex;
+            position: relative;
+        }
+        
+        .blackbar {
+            position: absolute;
+            background-color: #333333;
+            z-index: 0;
+            top: 0px;
+            height: 61px;
+            width: 100%;
+            /* width: calc(100vw - 17px); */
+        }
+        
+        .logo {
+            width: 100px;
+            height: 118px;
+        }
+        
+        .logo img {
+            width: 100px;
+            height: 118px;
+            /* border-radius: 15%; */
+        }
+        
+        .back {
+            position: fixed;
+            z-index: 999;
+            width: 100px;
+            height: 100px;
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        .back img {
+            /* position: fixed;
+    z-index: 999; */
+            width: 100px;
+            height: 100px;
+            /* bottom: 10px;
+    right: 20px; */
+            opacity: 0.5;
+        }
+        
+        p {
+            position: fixed;
+            bottom: 30px;
+            right: 40px;
+            font-size: 20px;
+            font-weight: bolder;
+            color: black;
+        }
+        
+        .back img:hover {
+            opacity: 1;
+        }
+        
+        h1 {
+            margin: auto;
+            align-self: center;
+            color: white;
+            font-size: 50px;
+            text-shadow: -1px 0 10px goldenrod, 0 1px 10px goldenrod, 1px 0 10px goldenrod, 0 -1px 10px goldenrod;
+            /* text-shadow: -1px 0 10px white, 0 1px 10px white, 1px 0 10px white, 0 -1px 10px white; */
+            /* text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold; */
+        }
+        
+        .banner img {
+            width: 100%;
+            height: calc(100vh - 118px - 68px);
+            display: block;
+            /* 消除html 圖片 白線 */
+        }
+        
+        .hof-text {
+            display: none;
+        }
+        
+        .mobile-box {
+            display: none;
+        }
+        /* .mobileButtons {
+            display: none;
+        } */
+        /* 漢堡條區 */
+        
+        .mobileButtons {
+            display: none;
+            border: none;
+            background-color: rgba(239, 75, 35, 1);
+            z-index: 999;
+            position: fixed;
+            padding: 15px;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+        }
+        
+        ul {
+            position: relative;
+            margin: auto;
+            justify-content: start;
+            list-style: none;
+            padding: 0;
+            /* display: flex; */
+            text-align: left;
+        }
+        
+        .mobileButtons:hover {
+            opacity: 0.8;
+        }
+        
+        a:link {
+            color: #333333;
+        }
+        
+        a:visited {
+            color: #333333;
+        }
+        
+        a:hover {
+            color: white;
+        }
+        
+        a:active {
+            color: goldenrod;
+        }
+        
+        li {
+            margin: 15px 0;
+        }
+        
+        .mobileBlinks {
+            display: none;
+        }
+        
+        .open {
+            display: block;
+            width: 100%;
+        }
+        
+        .buttons {
+            display: flex;
+            font-weight: bolder;
+            /* background-color: #333333; */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .button {
+            /* background-color:  #EF4B23; */
+            border-radius: 10px;
+            padding: 5px;
+        }
+        
+        .dis-flex {
+            display: flex;
+        }
+        
+        .justify {
+            justify-content: space-around;
+        }
+        /* div有被定義寬跟高才看得見 */
+        /* 高度不需要被定義的情況 */
+        /* 1.標籤內有文字、圖片( <img> ) */
+        /* 替代方案 */
+        /* 用padding撐開高度去符合設計稿要求 */
+        
+        .intro {
+            text-align: center;
+            width: 100%-20px;
+            color: #FFF;
+            font-size: 20px;
+            letter-spacing: 10px;
+            padding: 20px;
+            font-family: 微軟正黑體;
+            background-color: #333333;
+            ;
+        }
+        
+        .back2 {
+            background-image: url(img/b1.jpg);
+            background-attachment: fixed;
+            background-repeat: round;
+        }
+        
+        .back2:hover {
+            z-index: 999;
+        }
+        
+        .page2 {
+            width: 100%;
+            max-width: 1140px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.85);
+            /* background-color: rgb(255, 255, 255); */
+        }
+        
+        .imgbox {
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-top: 10px;
+            position: relative;
+        }
+        
+        .img333 {
+            width: 100%;
+            background-size: cover;
+            height: 500px;
+            /* border: 10px double black; */
+        }
+        
+        .posey {
+            background-image: url(img/posey2.jpg);
+        }
+        
+        .phover:hover {
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            transition-duration: 1s;
+        }
+        
+        .posey:hover {
+            background-image: url(img/posey4.jpg);
+            transform: scale(1.05);
+            left: 50px;
+            width: 630px;
+            /* background-repeat: repeat; */
+        }
+        
+        .madbum {
+            background-image: url(img/madbum2.jpg);
+        }
+        
+        .madbum:hover {
+            background-image: url(img/madbum3.jpg);
+            transform: scale(1.1);
+            width: 500px;
+            left: 300px;
+        }
+        
+        .tim {
+            background-image: url(img/tim5.jpg);
+        }
+        
+        .tim:hover {
+            background-image: url(img/timh.jpg);
+            transform: scale(0.9);
+            left: 415px;
+            width: 715px;
+            /* background-repeat: repeat; */
+        }
+        
+        .textbox {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: start;
+            padding: 20px;
+            line-height: 25px;
+            letter-spacing: 1px;
+            font-family: 微軟正黑體;
+        }
+        
+        .text1 {
+            width: 32%;
+        }
+        
+        .text2 {
+            width: 32%;
+        }
+        
+        .text3 {
+            width: 32%;
+        }
+        
+        .back3 {
+            background-image: url(img/b3.jpg);
+            background-repeat: round;
+            /* background-attachment: fixed; */
+            /* background-repeat: no-repeat; */
+        }
+        
+        .page3 {
+            width: 100%;
+            max-width: 1140px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .boxp3 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        .img50link1 {
+            width: 48%;
+            height: 45%;
+            padding-top: 25px;
+            padding-left: 12px;
+        }
+        
+        .img50link2 {
+            width: 48%;
+            height: 45%;
+            padding-right: 12px;
+        }
+        
+        .img50 {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+        
+        .cain {
+            background-image: url(img/cain.jpg);
+        }
+        
+        .cain:hover {
+            background-image: url(img/cainh.jpg);
+            transform: scale(0.7);
+            right: 150px;
+            top: -120px;
+            /* background-repeat: repeat; */
+            height: 720px;
+        }
+        
+        .panda {
+            background-image: url(img/panda3.jpg);
+        }
+        
+        .panda:hover {
+            background-image: url(img/pandah.jpg);
+            transform: scale(0.7);
+            right: -150px;
+            top: 300px;
+            /* background-repeat: repeat; */
+            height: 710px;
+        }
+        /* .img4{ */
+        /* width: 48%;
+                    height: 45%; */
+        /* padding-top: 25px;
+                    padding-left:20px; */
+        /* } */
+        /* .img5{ */
+        /* width: 48%;
+                    height: 45%; */
+        /* padding-bottom:25px;
+                    padding-right:20px; */
+        /* } */
+        
+        .text4 {
+            width: 46%;
+            height: 45%;
+            margin-top: 20px;
+            padding: 20px;
+            /* margin: auto; */
+            text-align: start;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+        
+        .text5 {
+            width: 46%;
+            height: 45%;
+            padding: 0px 20px 0px 20px;
+            /* margin: auto; */
+            text-align: start;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+        
+        .text5-1024 {
+            display: none;
+        }
+        
+        .page4 {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            /* justify-content: space-between; */
+            flex-wrap: wrap;
+            position: relative;
+        }
+        
+        .boxleft {
+            width: 50%;
+        }
+        
+        .boxleft img {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .boxright {
+            width: 50%;
+        }
+        
+        .boxright img {
+            height: 100%;
+            width: 100%;
+        }
+        /* hr {
+            color: rgba(255, 200, 216, 0.1);
+            /* width: 200px; */
+        /*         
+        size: 1px;
+        margin-right: auto; */
+        /* } */
+        
+        .textleft {
+            position: absolute;
+            left: 28%;
+            top: 5%;
+            color: white;
+            width: 400px;
+            line-height: 25px;
+            letter-spacing: 1px;
+            text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black, 0 -1px 3px black;
+            font-family: 微軟正黑體;
+        }
+        
+        .textright {
+            position: absolute;
+            left: 80%;
+            top: 5%;
+            color: white;
+            width: 20%;
+            line-height: 25px;
+            letter-spacing: 1px;
+            text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+            font-family: 微軟正黑體;
+        }
+        
+        .page5 img {
+            width: 100%;
+            background-attachment: fixed;
+            display: block;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 100px;
+            background-color: #EF4B23;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+        }
+        
+        @media (max-width: 1530px) {
+            /* .textleft {
+                top: 5%;
+            }
+            .textright {
+                top: 5%;
+            } */
+            .boxright {
+                height: 600px;
+            }
+            /* .buttons {
+                display: none;
+            } */
+            .banner img {
+                height: 90%;
+            }
+        }
+        
+        @media (max-width: 1400px) {
+            .boxleft {
+                width: 100%;
+            }
+            .boxright {
+                width: 100%;
+                height: 100%;
+            }
+            .page4 img {
+                display: block;
+                /* img高度4px的inline-block修正 */
+            }
+            .textleft {
+                left: 65%;
+                top: 10%;
+                width: 30%;
+                font-size: 20px;
+            }
+            .textright {
+                left: 65%;
+                top: 60%;
+                width: 30%;
+                font-size: 20px;
+            }
+            /* .banner img {
+                height: 50%;
+            } */
+        }
+        
+        @media(max-width: 1200px) {
+            .textleft {
+                font-size: 16px;
+            }
+            .textright {
+                font-size: 16px;
+            }
+            /* 按鈕區塊加box-sizing-border-box去除突出padding */
+        }
+        
+        @media(max-width: 1024px) {
+            .boxp3 {
+                width: 100%;
+                height: 1800px;
+                display: flex;
+                box-sizing: border-box;
+            }
+            .textleft {
+                top: 5%;
+                left: 57%;
+                width: 40%;
+            }
+            .textright {
+                top: 55%;
+                left: 59%;
+                width: 40%;
+            }
+            .img50link1 {
+                margin: auto;
+                width: 90%;
+                height: 27%;
+                padding: 0px;
+                background-size: cover;
+            }
+            .text4 {
+                width: 80%;
+                height: 22%;
+                margin: auto;
+                margin-top: 20px;
+                /* box-sizing: border-box; */
+            }
+            .img50link2 {
+                margin: auto;
+                width: 90%;
+                height: 27%;
+                padding: 0px;
+                background-size: cover;
+            }
+            .text5 {
+                display: none;
+            }
+            .text5-1024 {
+                width: 80%;
+                margin: auto;
+                height: 22%;
+                margin-top: 40px;
+                text-align: start;
+                line-height: 25px;
+                letter-spacing: 1px;
+                display: block;
+                box-sizing: border-box;
+            }
+            .tim:hover {
+                left: 180px;
+            }
+            .cain:hover {
+                transform: scale(0.9);
+                right: 0px;
+                top: -80px;
+                /* background-repeat: repeat; */
+            }
+            .panda:hover {
+                background-image: url(img/pandah.jpg);
+                transform: scale(0.9);
+                right: 0px;
+                top: 800px;
+                /* background-repeat: repeat; */
+            }
+            a {
+                width: 33.3%;
+            }
+        }
+        /* 1007文字開始爆版 */
+        
+        @media(max-width: 900px) {
+            .textleft {
+                font-size: 14px;
+            }
+            .textright {
+                font-size: 14px;
+            }
+            @media(max-width: 834px) {
+                .textleft {
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                }
+                .textright {
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                }
+            }
+            @media(max-width: 768px) {
+                .textleft {
+                    top: 1%;
+                }
+                .textright {
+                    top: 51%
+                }
+                .img333 {
+                    /* background-size: contain;
+                    background-repeat: no-repeat; */
+                    height: 290px;
+                }
+                a {
+                    width: 33.3%;
+                }
+            }
+            @media(max-width: 667px) {
+                .back {
+                    width: 50px;
+                    height: 50px;
+                    bottom: 10px;
+                    right: 10px;
+                }
+                .back img {
+                    width: 50px;
+                    height: 50px;
+                }
+                p {
+                    bottom: 14px;
+                    right: 20px;
+                    font-size: 14px;
+                }
+                .buttons {
+                    display: none;
+                }
+                .mobileButtons {
+                    display: block;
+                }
+                .imgbox {
+                    display: none;
+                }
+                .textbox {
+                    display: none;
+                }
+                .mobile-box {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    position: relative;
+                    /* 
+                    display: block;
+                    position: relative; */
+                }
+                .mobile-hover:hover {
+                    transition-duration: 1s;
+                    transform: scale(1);
+                    height: 400px;
+                }
+                .tim:hover {
+                    background-position: right;
+                }
+                .mobile-a {
+                    width: 70%;
+                    /* height: 600px; */
+                    margin: 0px auto 0px;
+                }
+                .mobile-img333 {
+                    width: 100%;
+                    height: 400px;
+                    background-size: cover;
+                    background-position: top;
+                    /* background-repeat: no-repeat; */
+                }
+                .mobile-text {
+                    width: 70%;
+                    margin: 0px auto 0;
+                    padding: 40px;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .boxp3 {
+                    height: 1700px;
+                }
+                .img50link1 {
+                    width: 70%;
+                    height: 300px;
+                    margin: 20px auto 0;
+                }
+                .text4 {
+                    width: 70%;
+                    height: 30%;
+                    margin: 0 auto;
+                    /* box-sizing: border-box; */
+                }
+                .img50link2 {
+                    width: 70%;
+                    height: 300px;
+                    margin: 20px auto 0;
+                }
+                .text5-1024 {
+                    width: 70%;
+                    height: 30%;
+                    margin: 0 auto;
+                }
+                .textleft {
+                    display: none;
+                }
+                .textright {
+                    display: none;
+                }
+                .hof-text {
+                    display: block;
+                    padding: 0px;
+                    top: 0;
+                    margin: 0;
+                    color: #FFF;
+                    text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black, 0 -1px 3px black;
+                    font-family: 微軟正黑體;
+                    /* display: none; */
+                }
+                .mobile-hof1 {
+                    display: block;
+                    background-image: url(img/mays3.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: auto;
+                }
+                .mobile-hof2 {
+                    display: block;
+                    background-image: url(img/bb2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media(max-width: 523px) {
+                .img50 {
+                    height: 100%;
+                }
+                .img50link1 {
+                    height: 210px;
+                }
+                .img50link2 {
+                    height: 210px;
+                }
+            }
+            @media(max-width: 411px) {
+                .boxp3 {
+                    height: 2000px;
+                }
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="p1" class="main">
+        <div class="back" hidden>
+            <a href="#p1">
+                <img src="img/back.png" alt="">
+                <p>TOP</p>
+            </a>
+        </div>
+        <div class="blackbar"></div>
+
+        <div class="contain">
+
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <h1>San Francisco Giants</h1>
+        </div>
+        <div id="ban" class="banner">
+            <a href="https://www.mlb.com/giants" target="blank">
+                <img src="img/banner2.jpg" alt="">
+            </a>
+        </div>
+
+        <!-- <div class="mobileButtons"> -->
+        <!-- <i class="fas fa-bars"></i> -->
+        <button class="mobileButtons fas fa-bars">
+                <div class="mobileBlinks open">
+                    <ul >
+                        <li>
+                            <a href="#link1">Buster Posey</a>
+                        </li>
+                        <li>
+                            <a href="#link2">Madison Bumgarner</a>
+                        </li>
+                        <li>
+                            <a href="#link3">Tim Lincecum</a>
+                        </li>
+                        <li>
+                            <a href="#link4">Matt Cain</a>
+                        </li>
+                        <li>
+                            <a href="#link5">Pablo Sandoval</a>
+                        </li>
+                        <li>
+                            <a href="#link6">Willie Mays</a>
+                        </li>
+                        <li>
+                            <a href="#link7">Barry Bonds</a>
+                        </li>
+                    </ul>
+                </div>
+        </button>
+        <div id="bt" class="buttons contain dis-flex justify">
+            <a href="#p2" class="button">HARDWARE1</a>
+            <a href="#p3" class="button">HARDWARE2</a>
+            <a href="#p4" class="button">LENGENDARY</a>
+            <a href="#p5" class="button">WALLPAPER</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+    <div class="intro">點擊照片觀看精選影片</div>
+    <div class="back2">
+        <div id="p2" class="page2">
+            <div class="mobile-box mobile">
+                <a class='mobile-a mobile' style="display: flex;" href="https://www.youtube.com/results?search_query=buster+posey+highlights&sp=EgIgAQ%253D%253D" target="blank">
+                    <div id=link1 class="mobile-posey posey mobile-img333 mobile-hover"></div>
+                </a>
+                <div class="mobile-text mobile">
+                    Buster Posey（C、1B）<br> 1987年生，2008年第5順位
+                    <br> 2010年新人王，三度世界冠軍功臣
+                    <br> 2012年拿下MVP，6次入選明星賽
+                    <br> 生涯成績：AVG-0.302/OBP-0.37/OPS-0.826，11年累計1258場出賽1380H-140HR，累計薪資1.68億美金
+                    <br>
+                    <br> 近代大聯盟最強捕手之一，少數以捕手身分拿下國聯打擊王的天才打者，防守方面也是頂尖,接捕過無安打及完全比賽，2011年曾在本壘衝撞時重傷導致球季報銷，聯盟也因此更改本壘衝撞規則，被戲稱是Posey條款，隔年打出不可思議的完美成績拿下MVP，季後賽最佳表現是2012年可惜近年退化甚快，打擊能力已不如以往。
+                </div>
+
+
+                <a id=link2 class='mobile-a mobile' style="display: flex;" href="https://www.youtube.com/results?search_query=madison+bumgarner+highlights&sp=EgIgAQ%253D%253D" target="blank">
+                    <div class="mobile-madbum madbum mobile-img333 mobile-hover"></div>
+                </a>
+                <div class="mobile-text mobile">
+                    Madison Bumgarner（SP）<br> 1989年生，2007年第10順位，2014年世界大賽MVP，4次入選明星賽
+                    <br> 生涯成績：防禦率3.13-119勝-1846局-1794次三振-WHIP-1.11-K/BB-4.19，累計薪資1.42億美金
+                    <br>
+                    <br> 三屆冠軍都是主戰先發投手，19歲就登上大聯盟，2014年季後賽表現驚人，從外卡一路殺入世界大賽，一肩扛起球隊，七場先發內兩場完封勝，展現出完美的壓制力，是巨人近年最強的王牌，能夠每年繳出200局ERA-3左右的優質成績，可惜在2020年離開待了11年的巨人隊與響尾蛇隊簽約。
+                </div>
+
+
+                <a id=link3 class='mobile-a mobile' style="display: flex;" href="https://www.youtube.com/results?search_query=tim+lincecum+highlights&sp=EgIgAQ%253D%253D" target="blank">
+                    <div class="mobile-tim tim mobile-img333 mobile-hover"></div>
+                </a>
+                <div class="mobile-text mobile">
+                    Tim Lincecum（SP）<br> 1984年生，2006年第10順位，4次入選明星賽，無安打比賽x2
+                    <br> 生涯成績：防禦率3.74-110勝-1682局-1736次三振-WHIP-1.29-K/BB-2.59，累計薪資1.02億美金
+                    <br>
+                    <br> 巨人2000年後的第一任王牌，23歲升上大聯盟，但接下來短短四年內投出 駭人成就，連續四年入選明星賽，連三年拿下國聯三振王，賽揚獎二連霸 球速並不快但巔峰期曲球及變速球都球威驚人，招牌的變速球更是三振利器 可惜傷痛纏身，球速大幅下滑後即使努力調整也不如以往，雖然在2014年季後賽因壓制力下滑轉任後援投手但也幫助球隊拿下冠軍，在2016年和大聯盟漸行漸遠消失在MLB，結束不長但璀璨的職業生涯。
+                </div>
+            </div>
+            <!-- a href 等號右邊用來放置要前往的連結網址（URL），target 是連結目標的意思，可以用來設定用何種方式前往連結，常見的有另開視窗（_blank）、直接於現在的視窗開起（_self）、開啟於父層框架（_parent）等，target 在 HTML a href 屬性中為非必要項目。 -->
+            <div class="imgbox">
+                <a style="display: flex;" href="https://www.youtube.com/results?search_query=buster+posey+highlights&sp=EgIgAQ%253D%253D" target="blank">
+                    <div class="posey img333 phover"></div>
+                </a>
+
+
+                <!-- <a href="https://www.youtube.com/results?search_query=buster+posey+highlights&sp=EgIgAQ%253D%253D" target="blank">
+                    
+                    <img class=img333 src="img/posey2.jpg" alt=""> 
+                    </a> -->
+                <a style="display: flex;" href="https://www.youtube.com/results?search_query=madison+bumgarner+highlights&sp=EgIgAQ%253D%253D" target="blank">
+                    <div class="madbum img333 phover"></div>
+                </a>
+
+                <!-- <a href="https://www.youtube.com/results?search_query=madison+bumgarner+highlights+" target="blank">
+                    <img class="img333 madbum"  src="img/madbum2.jpg" alt="">
+                    </a> -->
+
+
+                <a style="display: flex;" href="https://www.youtube.com/results?search_query=tim+lincecum+highlights&sp=EgIgAQ%253D%253D" target="blank">
+                    <div class="tim img333 phover"></div>
+                </a>
+                <!-- <a href="https://www.youtube.com/results?search_query=tim+lincecum+highlights+" target="blank">
+                    <img class=img333 src="img/tim5.jpg" alt="">
+                    </a> -->
+            </div>
+            <div class="textbox">
+                <div class="text1">
+                    Buster Posey（C、1B）<br> 1987年生，2008年第5順位
+                    <br> 2010年新人王，三度世界冠軍功臣
+                    <br> 2012年拿下MVP，6次入選明星賽
+                    <br> 生涯成績：AVG-0.302/OBP-0.37/OPS-0.826，11年累計1258場出賽1380H-140HR，累計薪資1.68億美金
+                    <br>
+                    <br> 近代大聯盟最強捕手之一，少數以捕手身分拿下國聯打擊王的天才打者，防守方面也是頂尖,接捕過無安打及完全比賽，2011年曾在本壘衝撞時重傷導致球季報銷，聯盟也因此更改本壘衝撞規則，被戲稱是Posey條款，隔年打出不可思議的完美成績拿下MVP，季後賽最佳表現是2012年可惜近年退化甚快，打擊能力已不如以往。
+                </div>
+
+                <div class="text2">
+                    Madison Bumgarner（SP）<br> 1989年生，2007年第10順位，2014年世界大賽MVP，4次入選明星賽
+                    <br> 生涯成績：防禦率3.13-119勝-1846局-1794次三振-WHIP-1.11-K/BB-4.19，累計薪資1.42億美金
+                    <br>
+                    <br> 三屆冠軍都是主戰先發投手，19歲就登上大聯盟，2014年季後賽表現驚人，從外卡一路殺入世界大賽，一肩扛起球隊，七場先發內兩場完封勝，展現出完美的壓制力，是巨人近年最強的王牌，能夠每年繳出200局ERA-3左右的優質成績，可惜在2020年離開待了11年的巨人隊與響尾蛇隊簽約。
+                    <br>
+                </div>
+                <div class="text3">
+                    Tim Lincecum（SP）<br> 1984年生，2006年第10順位，4次入選明星賽，無安打比賽x2
+                    <br> 生涯成績：防禦率3.74-110勝-1682局-1736次三振-WHIP-1.29-K/BB-2.59，累計薪資1.02億美金
+                    <br>
+                    <br> 巨人2000年後的第一任王牌，23歲升上大聯盟，但接下來短短四年內投出 駭人成就，連續四年入選明星賽，連三年拿下國聯三振王，賽揚獎二連霸 球速並不快但巔峰期曲球及變速球都球威驚人，招牌的變速球更是三振利器 可惜傷痛纏身，球速大幅下滑後即使努力調整也不如以往，雖然在2014年季後賽因壓制力下滑轉任後援投手但也幫助球隊拿下冠軍，在2016年和大聯盟漸行漸遠消失在MLB，結束不長但璀璨的職業生涯。
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="back3">
+        <div id="p3" class="page3">
+            <div class="boxp3">
+                <!-- <a class="img50link" href="" target="blank"> -->
+                <a id=link4 class="img50link1" style=display:flex; href="https://www.youtube.com/results?search_query=matt+cain+highlights" target="blank">
+                    <div class="cain img50 phover"></div>
+                </a>
+                <!-- <a class="img50link1" href="https://www.youtube.com/results?search_query=matt+cain+highlights" target="blank">
+                    <img class="img50 img4" src="img/cain.jpg" alt="">
+                </a> -->
+                <div class="text4">
+                    Matt Cain（SP）<br> 1984年生，2002年第5順位，3次入選明星賽，完全比賽x1
+                    <br> 生涯成績：防禦率3.68-104勝-2085.2局-1694次三振-WHIP-1.23-K/BB-3.1，累計薪資1.34億美金
+                    <br>
+                    <br> 巨人王朝最早的核心球員，2005年登上大聯盟初試啼聲，隔年開始進入固定先發輪值，開始長達13年的灣區生涯， 很快地成為聯盟前段的先發投手，雖然矚目度不高，但巔峰期也能在賽揚票選排到第6名，2006~13年年至少投滿30場先發以上。
+                    <br>
+                    <br> 在2010年季後賽扮演關鍵角色，雖然總共三輪系列賽只各投一場，但是防禦率是完美的0， 2012年責任重大共扛下五場比賽，國聯冠軍賽第七戰5.2局無失分幫助球隊挺進冠軍賽，世界大賽封王的第四戰也是由他主投， 雖然和巨人簽下六年長約但晚期因傷並沒有太多的好表現，2017年黯然退休。
+
+                </div>
+
+                <div class="text5">
+                    Pablo Sandoval（3B、1B、C）<br> 1986年生，2003年自由契約簽下，2次入選明星賽，2014年世界大賽MVP
+                    <br>
+                    <br> 生涯成績：AVG-0.28/OBP-0.332/OPS-0.78，12年累計1277場出賽1248H-148HR，累計薪資1.13億美金
+                    <br>
+                    <br> 因為圓滾滾的外型備取了綽號功夫熊貓，雖然不是聯盟巨星，但在巨人隊相當受歡迎， 21歲登上大聯盟，雖然可以蹲捕但三壘是更適合他的位子，2008-14都是巨人的主戰三壘手， 生涯巔峰涵蓋了舊金山的黃金年代，有著一定的長打火力，儘管巨人主場影響了他的數據， 2012及14年的季後賽都打得相當火燙，2012年世界大賽第一戰在主場演出單場三響砲，橫掃老虎後拿下了冠軍賽MVP， 14年雖然沒有擊出任何全壘打，季後賽上壘率高達0.423依然在進攻端帶來極大的幫助。
+                </div>
+
+
+                <!-- <a class="img50link2" href="https://www.youtube.com/results?search_query=pablo+sandoval+highlights" target="blank"> -->
+                <a id=link5 class="img50link2" style=display:flex; href="https://www.youtube.com/results?search_query=pablo+sandoval+highlights" target="blank">
+                    <div class="panda img50 phover"></div>
+                </a>
+                <div class="text5-1024">
+                    Pablo Sandoval（3B、1B、C）<br> 1986年生，2003年自由契約簽下，2次入選明星賽，2014年世界大賽MVP
+                    <br>
+                    <br> 生涯成績：AVG-0.28/OBP-0.332/OPS-0.78，12年累計1277場出賽1248H-148HR，累計薪資1.13億美金
+                    <br>
+                    <br> 因為圓滾滾的外型備取了綽號功夫熊貓，雖然不是聯盟巨星，但在巨人隊相當受歡迎， 21歲登上大聯盟，雖然可以蹲捕但三壘是更適合他的位子，2008-14都是巨人的主戰三壘手， 生涯巔峰涵蓋了舊金山的黃金年代，有著一定的長打火力，儘管巨人主場影響了他的數據， 2012及14年的季後賽都打得相當火燙，2012年世界大賽第一戰在主場演出單場三響砲，橫掃老虎後拿下了冠軍賽MVP， 14年雖然沒有擊出任何全壘打，季後賽上壘率高達0.423依然在進攻端帶來極大的幫助。
+                </div>
+                <!-- <img class="img50 img5" src="img/panda3.jpg" alt="">
+                </a> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div id="p4" class="page4">
+        <div class="boxleft">
+
+            <a id=link6 href="https://www.youtube.com/results?search_query=willle+mays" target="blank">
+                <img src="img/mays1.jpeg" alt="">
+                <div class="textleft">
+                    Willie Mays（CF）<br> 1931年生，1950年自由契約球員，名人堂成員
+                    <br> 生涯成績：AVG-0.302/OBP-0.384/OPS-0.941，22年累計2992場出賽3283H-660HR-338SB
+                    <!-- <hr> -->
+                    <br>
+                    <br> 棒球史上前五名的球員，1951年拿下新人王後開始傳奇生涯， 24次明星賽出賽證明他是當代人氣王，12次金手套及2次MVP，擁有全能的身手 及穩定的出勤率，1970年成為史上第2位3000安500轟的球員，660HR迄今依然高居歷史第六
+                    <!-- <hr> -->
+
+                </div>
+            </a>
+        </div>
+        <div class="mobile-hof1 mobile">
+            <div class="mobile-text hof-text mobile">
+                <br>Willie Mays（CF）<br> 名人堂成員
+                <br> 生涯AVG-0.302/OBP-0.384/OPS-0.941 <br> <br>22年累計2992場出賽3283H-660HR-338SB
+                <br> 棒球史上前五名的球員<br>1951年拿下新人王後開始傳奇生涯<br>24次明星賽出賽證明他是當代人氣王<br> 12次金手套及2次MVP
+                <br>
+                <br>擁有全能的身手 及穩定的出勤率<br>1970年成為史上第2位3000安500轟的球員<br>660HR迄今依然高居歷史第六
+                <br><br><br><br><br><br><br><br><br>
+
+
+            </div>
+        </div>
+        <div class="boxright">
+            <a id=link7 href="https://www.youtube.com/results?search_query=barry+bonds" target="blank">
+                <img src="img/bb3.jpg" alt="">
+                <div class="textright">
+                    Barry Bonds（LF、CF）<br> 1964年生，1985年海盜隊第6順位，歷史全壘打王、最多MVP
+                    <br> 生涯成績：AVG-0.298/OBP-0.444/OPS-1.051
+                    <br>22年累計2986場出賽2935H-762HR-514SB<br>
+                    <!-- <hr> -->
+                    <br> 父親跟教父Mays都是巨人外野手，1986年從海盜隊發跡，在海盜的最後三年內二奪MVP，1993年轉隊到舊金山，首年打出OPS 1.135、46HR橫掃各大獎，生涯12個球季被故意保送最多，是當代投手夢靨的證明
+                    <br>
+                    <br> 2001年狠敲73HR打破單季紀錄，2004年轟出45HR、OBP-0.609、OPS-1.422-奪下第七座MVP，生涯累計762HR，皆是聯盟紀錄！曾使用類固醇而遭到聯盟封殺被迫退休，2020年仍以60%得票率叩關名人堂失敗。
+                </div>
+            </a>
+        </div>
+        <div class="mobile-hof2 mobile">
+            <div class="mobile-text hof-text mobile">
+                <br>Barry Bonds（LF、CF）<br> 歷史全壘打王、最多MVP
+                <br> 生涯AVG-0.298/OBP-0.444/OPS-1.051
+                <br>22年累計2986場出賽2935H-762HR-514SB<br>
+                <!-- <hr> -->
+                <br> 父親跟教父Mays都是巨人外野手<br>1986年從海盜隊發跡<br>在海盜的最後三年內二奪MVP<br>1993年轉隊到舊金山<br>首年打出OPS 1.135、46HR橫掃各大獎<br>生涯12個球季被故意保送最多<br>是當代投手夢靨的證明
+                <br>
+                <br> 2001年狠敲73HR打破單季紀錄<br>2004年轟出45HR、OBP-0.609<br>OPS-1.422-奪下第七座MVP<br>生涯累計762HR，皆是聯盟紀錄！<br>曾使用類固醇而遭到聯盟封殺被迫退休<br>2020年仍以60%得票率叩關名人堂失敗。
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div id="p5" class="page5">
+        <img src="img/WS.jpg" alt="">
+    </div>
+
+    <div class="footer">MLB©2020</div>
+    <!-- <div class="pfoot"></div> -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        var mobileButtons = document.querySelector(".mobileButtons"); //手機版的按鈕
+        var mobileBlinks = document.querySelector(".mobileBlinks"); //手機版的選單
+        // var close = document.querySelector(".close"); 
+        //關掉選單的按鈕
+
+        // mobileButtons.addEventListener("click", function() {
+        //選單要打開
+
+        //加上class "active"
+        //     mobileBlinks.classList.add("active");
+        // });
+
+        // close.addEventListener("click", function() {
+        //     mobileBlinks.classList.remove("active");
+        // });
+
+        $('.mobileButtons').click(function() {
+                if ($('.mobileBlinks').hasClass('open')) {
+                    $('.mobileBlinks').removeClass('open')
+                } else {
+                    $('.mobileBlinks').addClass('open')
+                }
+            })
+            //         $(document).ready(function() { 
+
+
+        //     $(window).scroll(function() { 
+        //       var height = $('body').height(); 
+        //       var scrollTop = $('body').scrollTop(); 
+        //       var opacity = 0; 
+
+
+        //       if(scrollTop > 400) { 
+        //        opacity = 1; 
+        //       } 
+
+        //      $('.social').css('opacity', opacity); 
+        //     }); 
+        // });
+        $(function() {
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if (scrollVal >= 1080) {
+                    $('.back').show()
+                } else {
+                    $('.back').hide()
+                }
+                $("span.qScrollTop").text(scrollVal);
+            });
+        });
+        // 滾動至一定高度顯示
+
+
+        function mq() {
+            var query = Modernizr.mq('(max-width: 667px)');
+            if (query) {
+                $('#holder').html('true');
+
+                // JavaScript here
+                // 當CSS media query計算的視窗寬度小於769px時執行
+            } else {
+                $('#holder').html('false');
+                // JavaScript here
+                // 當CSS media query計算的視窗寬度大於等於769px時執行
+            }
+        };
+        $(window).resize(function() {
+            mq();
+        });
+        mq();
+
+
+        enquire.register("screen and (max-width: 667px)", {
+            setup: function() {
+                $('#holder').html('false');
+                // JavaScript here
+                // 網頁載入時執行一次
+            },
+            match: function() {
+                $('#holder').html('true');
+
+                // JavaScript here
+                // 當CSS media query計算的視窗寬度小於769px時執行
+                // 網頁載入時執行一次
+                // 之後每次改變視窗時會再執行一次
+            },
+            unmatch: function() {
+                $('#holder').html('false');
+
+                // JavaScript here
+                // 當CSS media query計算的視窗寬度大於等於769px時執行
+                // 網頁載入時不會執行
+                // 之後每次改變視窗時會再執行一次
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
