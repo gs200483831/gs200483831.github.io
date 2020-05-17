@@ -1,5 +1,6 @@
 a,
-a h1 ,a h2{
+a h1,
+a h2 {
     display: inline-block;
     text-decoration: none;
     position: relative;
@@ -21,8 +22,8 @@ a h1 ,a h2{
     }
 }
 
-a h1,a h2{
-
+a h1,
+a h2 {
     text-decoration: none;
     font-size: 1em;
     position: relative;
@@ -46,7 +47,6 @@ a h1,a h2{
             transition: all 0.3s;
         }
     }
-
 }
 
 // a::after {
@@ -68,11 +68,9 @@ a h1,a h2{
 //     border-bottom: 2px solid #3366FF;
 //     transition: 0.4s;
 // }
-
 // a:hover:after {
 //     width: 45%;
 // }
-
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -100,7 +98,12 @@ body {
     h1 {
         font-size: 70px;
         margin: auto;
-
+        @media (max-width: 768px) {
+            font-size: 50px;
+        }
+        @media (max-width: 411px) {
+            font-size: 30px;
+        }
     }
     .lobster {
         font-family: 'lobster';
@@ -110,9 +113,10 @@ body {
         @media (max-width: 411px) {
             font-size: 30px;
         }
-        
     }
-
+    .row {
+        margin: 0;
+    }
 }
 
 html {
@@ -123,6 +127,12 @@ html {
     font-size: 40px;
     width: 20%;
     margin: 1% 0;
+    @media (max-width: 768px) {
+        font-size: 22px;
+    }
+    @media (max-width: 411px) {
+        font-size: 17px;
+    }
 }
 
 .banner img {
@@ -135,6 +145,12 @@ html {
     width: 100%;
     height: 150px;
     background-color: black;
+    @media (max-width: 768px) {
+        height: 100px;
+    }
+    @media (max-width: 411px) {
+        height: 60px;
+    }
 }
 
 
@@ -173,10 +189,8 @@ html {
         // width: 100%;
         // padding: 35px 100px;
         padding: 2% 100px;
-
         // padding: 2% 0px;
         // padding: 2% 10% ;
-
         /* 去除bootstrap的box-sizing:border-box */
     }
 }
@@ -187,12 +201,13 @@ html {
     left: 0;
     right: 0;
     text-shadow: -1px -1px 10px rgb(51, 51, 51), 1px 1px 10px #333, 1px 1px 10px #333, -1px -1px 10px #333;
+    @media (max-width: 411px) {
+        width: 80%;
+    }
 }
 
 .origins {
-
     justify-content: space-between;
-
     img {
         width: 50%;
     }
@@ -228,44 +243,46 @@ html {
         // min-height: 658px;
         // background-color: gray;
     }
-    .col-md-12 ,.col-lg-6{
+    .col-md-12,
+    .col-lg-6 {
         padding: 0;
     }
     // .col-md-12{
     //     height: auto;
     // }
     @media (max-width: 991px) {
-        .dj{
+        .dj {
             width: 100%;
             height: 70vh;
             order: 1;
         }
-        img{
+        img {
             order: 2;
         }
-        .graffiti{
+        .graffiti {
             width: 100%;
             height: 70vh;
         }
-        .sd,.mc{            
+        .sd,
+        .mc {
             width: 100%;
             height: 70vh;
             background-position: center;
         }
-
-
     }
     @media (max-width: 600px) {
-        .dj,.sd,.mc,.graffiti{
+        .dj,
+        .sd,
+        .mc,
+        .graffiti {
             height: 80vh;
         }
-        .text{
-            width: 90%;
+        .text {
+            padding-top: 50px;
+            width: 70%;
         }
     }
 }
-
-
 
 .pt2pb2 {
     padding: 2% 0 2% 0;
@@ -278,25 +295,26 @@ html {
     img {
         width: 100%;
     }
-    .cultureSample,.cultureFlow,.cultureRemix  {
+    .cultureSample,
+    .cultureFlow,
+    .cultureRemix {
         width: 30%;
         @media (max-width: 768px) {
             width: 100%;
         }
     }
-    .cultureSample .text,.cultureFlow .text,.cultureRemix .text    {
+    .cultureSample .text,
+    .cultureFlow .text,
+    .cultureRemix .text {
         width: 80%;
     }
-
-    
-    
     .container-100 {
         max-width: 100%;
     }
 }
 
 .card {
-    border:none;
+    border: none;
     .card-body {
         background-color: #333333;
     }
@@ -305,7 +323,7 @@ html {
 .genresBannertext {
     top: calc(50% - 15vw);
     width: calc(50% + 15vh);
-    top:50%;
+    top: 50%;
     width: 50%;
     left: 0;
     right: 0;
@@ -314,7 +332,9 @@ html {
 }
 
 .genres {
-    a{margin: auto;}
+    a {
+        margin: auto;
+    }
     h1 {
         font-size: 40px;
         margin: 5px auto 5px;
@@ -324,7 +344,6 @@ html {
         flex-wrap: wrap;
     }
 }
-
 
 .backTOtop {
     background-image: url(https://cdn.onlinewebfonts.com/svg/img_367892.png);
@@ -340,6 +359,7 @@ html {
     font-size: 25px;
     background-color: whitesmoke;
 }
+
 @media (max-width: 375px) {
     .ytbox .featuretext {
         width: 200px;
