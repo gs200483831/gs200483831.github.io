@@ -1,0 +1,348 @@
+@charset "UTF-8";
+a,
+a h1, a h2 {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+
+a:link,
+a h1:link, a h2:link {
+  color: white;
+}
+
+a:visited,
+a h1:visited, a h2:visited {
+  color: white;
+}
+
+a:hover,
+a h1:hover, a h2:hover {
+  color: goldenrod;
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:active,
+a h1:active, a h2:active {
+  color: crimson;
+}
+
+a h1, a h2 {
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a h1:before, a h2:before {
+  content: "";
+  width: 0;
+  height: 0.1em;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  background: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a h1:hover:before, a h2:hover:before {
+  width: 100%;
+  left: 0;
+  margin: auto;
+  background: goldenrod;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.flex {
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+body {
+  margin: 0;
+  max-width: 1920px;
+  min-width: 320px;
+  background-color: #333333;
+  font-family: 微軟正黑體;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 36pt;
+  font-weight: bold;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
+body h1 {
+  font-size: 70px;
+  margin: auto;
+}
+
+body .lobster {
+  font-family: 'lobster';
+}
+
+@media (max-width: 768px) {
+  body .lobster {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 411px) {
+  body .lobster {
+    font-size: 30px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.buttons a {
+  font-size: 40px;
+  width: 20%;
+  margin: 1% 0;
+}
+
+.banner img {
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+
+.pagebar {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+
+/* SWIPER */
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-container .swiper-slide img {
+  width: 100%;
+}
+
+.swiper-container .text {
+  padding: 2% 0 2% 0;
+  width: 80%;
+  margin: auto;
+}
+
+.swiper-container .swiper-button-next:hover,
+.swiper-container .swiper-button-prev:hover {
+  color: crimson;
+}
+
+.swiper-container .swiper-pagination {
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+
+/* SWIPER */
+.featureImgbox {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1% 0 0% 0;
+}
+
+.featureImgbox .featuretext {
+  width: 350px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 2% 100px;
+  /* 去除bootstrap的box-sizing:border-box */
+}
+
+.originstext {
+  top: 75%;
+  width: 50%;
+  left: 0;
+  right: 0;
+  text-shadow: -1px -1px 10px #333333, 1px 1px 10px #333, 1px 1px 10px #333, -1px -1px 10px #333;
+}
+
+.origins {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.origins img {
+  width: 50%;
+}
+
+.origins .dj {
+  background-image: url(https://i.pinimg.com/originals/16/66/04/166604deaf78127ba4c32b3537e03ac1.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.origins .graffiti {
+  background-image: url(./origins/graffitiBack2.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.origins .sd {
+  background-image: url(./origins/SD4.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.origins .mc {
+  background-image: url(./origins/MC1.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.origins .text {
+  width: calc(700px + 10%);
+  width: calc(80%);
+}
+
+.origins .col-md-12, .origins .col-lg-6 {
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  .origins .dj {
+    width: 100%;
+    height: 70vh;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .origins img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .origins .graffiti {
+    width: 100%;
+    height: 70vh;
+  }
+  .origins .sd, .origins .mc {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .origins .dj, .origins .sd, .origins .mc, .origins .graffiti {
+    height: 80vh;
+  }
+  .origins .text {
+    width: 90%;
+  }
+}
+
+.pt2pb2 {
+  padding: 2% 0 2% 0;
+}
+
+.culture h1 {
+  font-size: 40px;
+}
+
+.culture img {
+  width: 100%;
+}
+
+.culture .cultureSample, .culture .cultureFlow, .culture .cultureRemix {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .culture .cultureSample, .culture .cultureFlow, .culture .cultureRemix {
+    width: 100%;
+  }
+}
+
+.culture .cultureSample .text, .culture .cultureFlow .text, .culture .cultureRemix .text {
+  width: 80%;
+}
+
+.culture .container-100 {
+  max-width: 100%;
+}
+
+.card {
+  border: none;
+}
+
+.card .card-body {
+  background-color: #333333;
+}
+
+.genresBannertext {
+  top: calc(50% - 15vw);
+  width: calc(50% + 15vh);
+  top: 50%;
+  width: 50%;
+  left: 0;
+  right: 0;
+  text-shadow: -1px -1px 10px #333333, 1px 1px 10px #333, 1px 1px 10px #333, -1px -1px 10px #333;
+  top: calc(50% - 15vw);
+}
+
+.genres a {
+  margin: auto;
+}
+
+.genres h1 {
+  font-size: 40px;
+  margin: 5px auto 5px;
+}
+
+.genres .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.backTOtop {
+  background-image: url(https://cdn.onlinewebfonts.com/svg/img_367892.png);
+  background-size: cover;
+  position: fixed;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 375px) {
+  .ytbox .featuretext {
+    width: 200px;
+    padding: 2% 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

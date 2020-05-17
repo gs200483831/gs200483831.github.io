@@ -1,0 +1,348 @@
+a,
+a h1 ,a h2{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    &:link {
+        color: white;
+    }
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        color: goldenrod;
+        text-decoration: none;
+        transform: scale(1.1);
+        transition: 0.5s;
+        // border-bottom: 2px solid blue;
+    }
+    &:active {
+        color: crimson;
+    }
+}
+
+a h1,a h2{
+
+    text-decoration: none;
+    font-size: 1em;
+    position: relative;
+    transition: all 0.3s;
+    &:before {
+        content: "";
+        width: 0;
+        height: 0.1em;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        background: white;
+        transition: all 0.3s;
+    }
+    &:hover {
+        &:before {
+            width: 100%;
+            left: 0;
+            margin: auto;
+            background: goldenrod;
+            transition: all 0.3s;
+        }
+    }
+
+}
+
+// a::after {
+//     border-radius: 1em;
+//     border-top: .1em solid #2F56B0;
+//     content: "";
+//     position: absolute;
+//     right: 100%;
+//     bottom: .14em;
+//     left: 0;
+//     transition: right .4s cubic-bezier(0, .5, 0, 1);
+// }
+// a:after {
+//     content: "";
+//     position: absolute;
+//     bottom: 0px;
+//     left: 30%;
+//     width: 0%;
+//     border-bottom: 2px solid #3366FF;
+//     transition: 0.4s;
+// }
+
+// a:hover:after {
+//     width: 45%;
+// }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+body {
+    margin: 0;
+    max-width: 1920px;
+    min-width: 320px;
+    background-color: #333333;
+    font-family: 微軟正黑體;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 36pt;
+    font-weight: bold;
+    // text-align: justify;
+    // word-break: quote($string: "，");
+    overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    h1 {
+        font-size: 70px;
+        margin: auto;
+
+    }
+    .lobster {
+        font-family: 'lobster';
+        @media (max-width: 768px) {
+            font-size: 50px;
+        }
+        @media (max-width: 411px) {
+            font-size: 30px;
+        }
+        
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.buttons a {
+    font-size: 40px;
+    width: 20%;
+    margin: 1% 0;
+}
+
+.banner img {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.pagebar {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+
+/* SWIPER */
+
+.swiper-container {
+    width: 100%;
+    .swiper-slide img {
+        width: 100%;
+    }
+    .text {
+        padding: 2% 0 2% 0;
+        width: 80%;
+        margin: auto;
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        color: crimson;
+    }
+    .swiper-pagination {
+        transition: 1s opacity;
+    }
+}
+
+
+/* SWIPER */
+
+.featureImgbox {
+    justify-content: space-around;
+    padding: 1% 0 0% 0;
+    .featuretext {
+        width: 350px;
+        box-sizing: content-box;
+        margin-left: 15px;
+        margin-right: 15px;
+        // width: 100%;
+        // padding: 35px 100px;
+        padding: 2% 100px;
+
+        // padding: 2% 0px;
+        // padding: 2% 10% ;
+
+        /* 去除bootstrap的box-sizing:border-box */
+    }
+}
+
+.originstext {
+    top: 75%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    text-shadow: -1px -1px 10px rgb(51, 51, 51), 1px 1px 10px #333, 1px 1px 10px #333, -1px -1px 10px #333;
+}
+
+.origins {
+
+    justify-content: space-between;
+
+    img {
+        width: 50%;
+    }
+    .dj {
+        background-image: url(https://i.pinimg.com/originals/16/66/04/166604deaf78127ba4c32b3537e03ac1.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        // opacity: 0.5;
+    }
+    .graffiti {
+        background-image: url(./origins/graffitiBack2.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+    .sd {
+        background-image: url(./origins/SD4.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+    .mc {
+        background-image: url(./origins/MC1.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+    .text {
+        width: calc(700px + 10%);
+        width: calc(80%);
+        // width: calc(375px + 40%);
+        // min-height: 658px;
+        // background-color: gray;
+    }
+    .col-md-12 ,.col-lg-6{
+        padding: 0;
+    }
+    // .col-md-12{
+    //     height: auto;
+    // }
+    @media (max-width: 991px) {
+        .dj{
+            width: 100%;
+            height: 70vh;
+            order: 1;
+        }
+        img{
+            order: 2;
+        }
+        .graffiti{
+            width: 100%;
+            height: 70vh;
+        }
+        .sd,.mc{            
+            width: 100%;
+            height: 70vh;
+            background-position: center;
+        }
+
+
+    }
+    @media (max-width: 600px) {
+        .dj,.sd,.mc,.graffiti{
+            height: 80vh;
+        }
+        .text{
+            width: 90%;
+        }
+    }
+}
+
+
+
+.pt2pb2 {
+    padding: 2% 0 2% 0;
+}
+
+.culture {
+    h1 {
+        font-size: 40px;
+    }
+    img {
+        width: 100%;
+    }
+    .cultureSample,.cultureFlow,.cultureRemix  {
+        width: 30%;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    .cultureSample .text,.cultureFlow .text,.cultureRemix .text    {
+        width: 80%;
+    }
+
+    
+    
+    .container-100 {
+        max-width: 100%;
+    }
+}
+
+.card {
+    border:none;
+    .card-body {
+        background-color: #333333;
+    }
+}
+
+.genresBannertext {
+    top: calc(50% - 15vw);
+    width: calc(50% + 15vh);
+    top:50%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    text-shadow: -1px -1px 10px rgb(51, 51, 51), 1px 1px 10px #333, 1px 1px 10px #333, -1px -1px 10px #333;
+    top: calc(50% - 15vw);
+}
+
+.genres {
+    a{margin: auto;}
+    h1 {
+        font-size: 40px;
+        margin: 5px auto 5px;
+    }
+    .card-body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.backTOtop {
+    background-image: url(https://cdn.onlinewebfonts.com/svg/img_367892.png);
+    background-size: cover;
+    position: fixed;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    background-color: whitesmoke;
+}
+@media (max-width: 375px) {
+    .ytbox .featuretext {
+        width: 200px;
+        padding: 2% 0px;
+    }
+}
