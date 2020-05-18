@@ -93,6 +93,13 @@ body {
   white-space: normal;
 }
 
+@media (max-width: 411px) {
+  body {
+    font-size: 16px;
+    line-height: 24pt;
+  }
+}
+
 body h1 {
   font-size: 70px;
   margin: auto;
@@ -149,6 +156,12 @@ html {
 @media (max-width: 411px) {
   .buttons a {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 360px) {
+  .buttons a {
+    font-size: 12px;
   }
 }
 
@@ -315,6 +328,15 @@ html {
   .origins .text {
     padding-top: 50px;
     width: 70%;
+  }
+}
+
+@media (max-width: 411px) {
+  .origins .dj, .origins .sd, .origins .mc, .origins .graffiti {
+    height: 60vh;
+  }
+  .origins .text {
+    width: 100%;
   }
 }
 

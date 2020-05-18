@@ -95,6 +95,10 @@ body {
     overflow-wrap: break-word;
     word-break: break-all;
     white-space: normal;
+    @media (max-width: 411px) {
+        font-size: 16px;
+        line-height: 24pt;
+    }
     h1 {
         font-size: 70px;
         margin: auto;
@@ -133,6 +137,9 @@ html {
     @media (max-width: 411px) {
         font-size: 17px;
     }
+    @media (max-width: 360px) {
+        font-size: 12px;
+    }
 }
 
 .banner img {
@@ -165,6 +172,7 @@ html {
         padding: 2% 0 2% 0;
         width: 80%;
         margin: auto;
+
     }
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
@@ -280,6 +288,14 @@ html {
         .text {
             padding-top: 50px;
             width: 70%;
+        }
+    }
+    @media (max-width: 411px) {
+        .dj,        .sd,        .mc,        .graffiti {
+            height: 60vh;
+        }
+        .text {
+            width: 100%;
         }
     }
 }
