@@ -5,6 +5,9 @@ a h2 {
   display: inline-block;
   text-decoration: none;
   position: relative;
+  background: -webkit-linear-gradient(left, goldenrod, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 a:link,
@@ -30,12 +33,6 @@ a h2:hover {
   transition: 0.5s;
 }
 
-a:active,
-a h1:active,
-a h2:active {
-  color: crimson;
-}
-
 a h1,
 a h2 {
   text-decoration: none;
@@ -54,8 +51,8 @@ a h2:before {
   bottom: 0px;
   right: 0;
   background: white;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 a h1:hover:before,
@@ -63,7 +60,7 @@ a h2:hover:before {
   width: 100%;
   left: 0;
   margin: auto;
-  background: goldenrod;
+  background: -webkit-linear-gradient(left, goldenrod, white);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -101,6 +98,9 @@ body {
 }
 
 body h1 {
+  background: -webkit-linear-gradient(left, goldenrod, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 70px;
   margin: auto;
 }
@@ -118,7 +118,7 @@ body h1 {
 }
 
 body .lobster {
-  font-family: 'lobster';
+  font-family: 'Lobster', cursive;
 }
 
 @media (max-width: 768px) {
@@ -189,6 +189,10 @@ html {
   }
 }
 
+.history {
+  background: -webkit-linear-gradient(right, goldenrod, white);
+}
+
 /* SWIPER */
 .swiper-container {
   width: 100%;
@@ -206,7 +210,10 @@ html {
 
 .swiper-container .swiper-button-next:hover,
 .swiper-container .swiper-button-prev:hover {
-  color: crimson;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
 }
 
 .swiper-container .swiper-pagination {
@@ -229,6 +236,13 @@ html {
   margin-right: 15px;
   padding: 2% 100px;
   /* 去除bootstrap的box-sizing:border-box */
+}
+
+@media (max-width: 375px) {
+  .featureImgbox .featuretext {
+    width: 200px;
+    padding: 2% 0px;
+  }
 }
 
 .originstext {
@@ -336,12 +350,29 @@ html {
     height: 60vh;
   }
   .origins .text {
-    width: 100%;
+    width: 80%;
   }
 }
 
 .pt2pb2 {
   padding: 2% 0 2% 0;
+}
+
+.cultureSwiper {
+  background-image: url(./back4.jpg);
+  background-size: cover;
+}
+
+.cultureSwiper .card {
+  background-color: transparent;
+}
+
+.cultureSwiper .card .card-body {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.culture {
+  background-image: url(./back4.jpg);
 }
 
 .culture h1 {
@@ -355,6 +386,7 @@ html {
 .culture .cultureSample,
 .culture .cultureFlow,
 .culture .cultureRemix {
+  background-color: rgba(51, 51, 51, 0.3);
   width: 30%;
 }
 
@@ -363,6 +395,14 @@ html {
   .culture .cultureFlow,
   .culture .cultureRemix {
     width: 100%;
+  }
+}
+
+@media (max-width: 411px) {
+  .culture .cultureSample,
+  .culture .cultureFlow,
+  .culture .cultureRemix {
+    width: 90.625%;
   }
 }
 
@@ -378,10 +418,17 @@ html {
 
 .card {
   border: none;
+  background-color: transparent;
 }
 
 .card .card-body {
-  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+@media (max-width: 411px) {
+  .swiper-slide .card {
+    padding-top: 10vh;
+  }
 }
 
 .genresBannertext {
@@ -395,13 +442,49 @@ html {
   top: calc(50% - 15vw);
 }
 
+@media (max-width: 600px) {
+  .genresBannertext {
+    top: 15%;
+    width: 60%;
+    font-size: 14px;
+    line-height: 250%;
+  }
+}
+
+@media (max-width: 411px) {
+  .genresBannertext {
+    line-height: 200%;
+  }
+}
+
+@media (max-width: 360px) {
+  .genresBannertext {
+    top: 10%;
+    width: 70%;
+    font-size: 12px;
+    line-height: 200%;
+  }
+}
+
+.genresback {
+  background-image: url(./origins/graffitiBack2.jpg);
+}
+
 .genres a {
   margin: auto;
+  color: goldenrod;
+  -webkit-text-fill-color: unset;
 }
 
 .genres h1 {
   font-size: 40px;
   margin: 5px auto 5px;
+}
+
+@media (max-width: 360px) {
+  .genres h1 {
+    font-size: 30px;
+  }
 }
 
 .genres .card-body {
@@ -410,6 +493,30 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .footer h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 411px) {
+  .footer h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 376px) {
+  .footer h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 337px) {
+  .footer h1 {
+    font-size: 16px;
+  }
 }
 
 .backTOtop {
@@ -425,12 +532,5 @@ html {
   text-align: center;
   font-size: 25px;
   background-color: whitesmoke;
-}
-
-@media (max-width: 375px) {
-  .ytbox .featuretext {
-    width: 200px;
-    padding: 2% 0px;
-  }
 }
 /*# sourceMappingURL=main.css.map */
