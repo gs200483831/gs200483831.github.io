@@ -4,9 +4,9 @@ a h2 {
     display: inline-block;
     text-decoration: none;
     position: relative;
-            background: -webkit-linear-gradient(left,goldenrod, white);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(left, goldenrod, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     &:link {
         color: white;
     }
@@ -46,7 +46,7 @@ a h2 {
             width: 100%;
             left: 0;
             margin: auto;
-            background: -webkit-linear-gradient(left,goldenrod, white);
+            background: -webkit-linear-gradient(left, goldenrod, white);
             transition: all 0.3s;
         }
     }
@@ -87,7 +87,6 @@ body {
     max-width: 1920px;
     min-width: 320px;
     background-color: #333333;
-
     font-family: 微軟正黑體;
     color: white;
     font-size: 20px;
@@ -104,12 +103,11 @@ body {
         line-height: 24pt;
     }
     h1 {
-        background: -webkit-linear-gradient(left,goldenrod, white);
+        background: -webkit-linear-gradient(left, goldenrod, white);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 70px;
         margin: auto;
-
         @media (max-width: 768px) {
             font-size: 50px;
         }
@@ -119,7 +117,6 @@ body {
     }
     .lobster {
         font-family: 'Lobster', cursive;
-
         @media (max-width: 768px) {
             font-size: 50px;
         }
@@ -166,7 +163,6 @@ html {
     //     -webkit-background-clip: text;
     //     -webkit-text-fill-color: transparent;
     // }
-
     @media (max-width: 768px) {
         height: 100px;
     }
@@ -175,12 +171,23 @@ html {
     }
 }
 
-.history{
-    // background-image: url(./HotdogBack1.jpg);
-    // width: 100%;
-    // background-color: rgba($color: #000000, $alpha: 1.0);
-    background: -webkit-linear-gradient(right,goldenrod, white);
+.history {
+    // rgba(255, 0, 0, .7), rgba(255, 165, 0, .7), rgba(255, 255, 0, .7), rgba(0, 128, 0, .7), rgba(0, 255, 255, .7), rgba(0, 0, 255, .7), rgba(238, 130, 238, .7
+    // 彩虹色票
+    background: #333;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, rgb(100, 100, 100) 0%, #333 20%, #333 50%, rgb(100, 100, 100) 80%, #333 100%);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgb(100, 100, 100) 0%, #333 20%, #333 50%, rgb(100, 100, 100) 80%, #333 100%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgb(100, 100, 100) 0%, #333 20%, #333 50%, rgb(100, 100, 100) 80%, #333 100%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(100, 100, 100) 0%, #333 20%, #333 50%, rgb(100, 100, 100) 80%, #333 100%);
+    /* Standard syntax (must be last) */
+    // text-shadow: -1px -1px 5px rgb(51, 51, 51), 1px 1px 5px #333, 1px 1px 5px #333, -1px -1px 5px #333;
 }
+
+
 /* SWIPER */
 
 .swiper-container {
@@ -192,18 +199,14 @@ html {
         padding: 2% 0 2% 0;
         width: 80%;
         margin: auto;
-        
-
         // background: -webkit-linear-gradient(right,rgb(248, 76, 76), #3170ff);
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
     }
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
-
         transform: scale(1.1);
         filter: brightness(150%);
-
     }
     .swiper-pagination {
         transition: 1s opacity;
@@ -213,14 +216,26 @@ html {
 
 /* SWIPER */
 
+.ytbox {
+    background: #333;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #fff 0%, #333 10%, #333 90%, #fff 100%);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #fff 0%, #333 10%, #333 90%, #fff 100%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #fff 0%, #333 10%, #333 90%, #fff 100%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #646464 0%, #333 20% 80%, #646464 100%);
+}
+
 .featureImgbox {
     justify-content: space-around;
     padding: 1% 0 0% 0;
     .featuretext {
         width: 350px;
         box-sizing: content-box;
-        margin-left: 15px;
-        margin-right: 15px;
+        // margin-left: 15px;
+        // margin-right: 15px;
         // width: 100%;
         // padding: 35px 100px;
         padding: 2% 100px;
@@ -322,7 +337,10 @@ html {
         }
     }
     @media (max-width: 411px) {
-        .dj,        .sd,        .mc,        .graffiti {
+        .dj,
+        .sd,
+        .mc,
+        .graffiti {
             height: 60vh;
         }
         .text {
@@ -334,16 +352,16 @@ html {
 .pt2pb2 {
     padding: 2% 0 2% 0;
 }
-.cultureSwiper{    
+
+.cultureSwiper {
     background-image: url(./back4.jpg);
     background-size: cover;
     .card {
-        background-color:transparent;
+        background-color: transparent;
         .card-body {
             background-color: rgba($color: #333, $alpha: 0.5);
         }
     }
-
 }
 
 .culture {
@@ -378,22 +396,19 @@ html {
 
 .card {
     border: none;
-    background-color:transparent;
+    background-color: transparent;
     .card-body {
-
         background-color: rgba($color: #333, $alpha: 0.5);
         // background-color:transparent;
         // background-color: transparentize($color: #000000, $amount: 0);
     }
-
 }
 
-.swiper-slide .card{
+.swiper-slide .card {
     @media (max-width: 411px) {
         padding-top: 10vh;
-
     }
-    }
+}
 
 .genresBannertext {
     top: calc(50% - 15vw);
@@ -423,15 +438,16 @@ html {
         line-height: 200%;
     }
 }
-.genresback{
+
+.genresback {
     background-image: url(./origins/graffitiBack2.jpg);
 }
+
 .genres {
     a {
         margin: auto;
         color: goldenrod;
         -webkit-text-fill-color: unset;
-
     }
     h1 {
         font-size: 40px;
@@ -443,11 +459,10 @@ html {
     .card-body {
         display: flex;
         flex-wrap: wrap;
-       
     }
 }
 
-.footer h1{
+.footer h1 {
     @media (max-width: 600px) {
         font-size: 40px;
     }
@@ -461,6 +476,7 @@ html {
         font-size: 16px;
     }
 }
+
 .backTOtop {
     background-image: url(https://cdn.onlinewebfonts.com/svg/img_367892.png);
     background-size: cover;
@@ -475,4 +491,3 @@ html {
     font-size: 25px;
     background-color: whitesmoke;
 }
-
