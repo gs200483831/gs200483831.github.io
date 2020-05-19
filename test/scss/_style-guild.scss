@@ -1,0 +1,54 @@
+$nav_color: #334411;
+$co_color: #9e9f71;
+$footer_color: #b1b995;
+
+$font-family: "cwTeXFangSong", serif;
+$big_title: 36px;
+$small_title: 24px;
+$text: 20px;
+$vice_text: 18px;
+
+@mixin fontset($fontsize, $fontfamily) {
+    font-size: $fontsize;
+    font-family: $fontfamily;
+}
+
+// .ps_1 {
+//     font-size: $small_title;
+//     font-family: "cwTeXFangSong";
+//     font-weight: normal;
+//     letter-spacing: 5px;
+//     position: relative;
+// }
+
+@mixin fontset() {
+    font-size: $small_title;
+    font-family: "cwTeXFangSong";
+    font-weight: normal;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+@mixin h2() {
+    font-weight: normal;
+    font-family: "cwTeXFangSong";
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    left: 30px;
+    letter-spacing: 5px;
+    transform: translateY(-50%);
+}
+@mixin strong() {
+    letter-spacing: 4px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    font-weight: normal;
+    color: #b9b9b9;
+    font-size: 12px;
+    white-space: nowrap;
+    font-family: "Amiri", serif;
+}

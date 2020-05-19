@@ -1,0 +1,58 @@
+[
+  {
+    "image_url_0": "..\/img\/tea_menu\/Aged_can_DongDing_oo.jpg",
+    "image_url_1": "..\/img\/tea_menu\/Roasted_can_Shanlinsi.jpg",
+    "image_url_2": "..\/img\/tea_menu\/Special_can_GueiFei.jpg",
+    "image_url_3": "..\/img\/tea_menu\/Refreshing_can_Lishan.jpg",
+    "product_name_0": "不知春",
+    "product_name_1": "阿里山金萱",
+    "product_name_2": "清香阿里山烏龍",
+    "product_name_3": "清香杉林溪烏龍",
+    "product_price_0": "NT.880",
+    "product_price_1": "NT.980",
+    "product_price_2": "NT.1380",
+    "product_price_3": "NT.1980"
+  },
+  {
+    "image_url_0": "..\/img\/tea_menu\/Aged_can_Taiwanese_oo.jpg",
+    "image_url_1": "..\/img\/tea_menu\/Refreshing_can_Alishan_jing.jpg",
+    "image_url_2": "..\/img\/tea_menu\/Roasted_can_LR_Shanlinsi.jpg",
+    "image_url_3": "..\/img\/tea_menu\/Special_can_Taiwanese_black.jpg",
+    "product_name_0": "輕焙凍頂烏龍",
+    "product_name_1": "輕焙阿里山烏龍",
+    "product_name_2": "輕焙杉林溪烏龍",
+    "product_name_3": "深焙杉林溪烏龍",
+    "product_price_0": "NT.980",
+    "product_price_1": "NT.1380",
+    "product_price_2": "NT.1980",
+    "product_price_3": "NT.1980"
+  },
+  {
+    "image_url_0": "..\/img\/tea_menu\/Aged_can_TieGuanYin.jpg",
+    "image_url_1": "..\/img\/tea_menu\/Refreshing_can_Alishan_oo.jpg",
+    "image_url_2": "..\/img\/tea_menu\/Roasted_can_Roasted_LR_DongDing_oo.jpg",
+    "image_url_3": "..\/img\/tea_menu\/Special_can_Jasmine.jpg",
+    "product_name_0": "白毫茉莉",
+    "product_name_1": "桂香包種",
+    "product_name_2": "穀香包種",
+    "product_name_3": "高山小葉種紅茶",
+    "product_price_0": "NT.880",
+    "product_price_1": "NT.80",
+    "product_price_2": "NT.680",
+    "product_price_3": "NT.980"
+  },
+  {
+    "image_url_0": "..\/img\/tea_menu\/Refreshing_can_Shanlinsi.jpg",
+    "image_url_1": "..\/img\/tea_menu\/Roasted_can_LR_Alishan_oo.jpg",
+    "image_url_2": "..\/img\/tea_menu\/Special_can_Lishan_black.jpg",
+    "image_url_3": "",
+    "product_name_0": "二十年老烏龍",
+    "product_name_1": "窖藏鐵觀音",
+    "product_name_2": "窖藏老凍頂",
+    "product_name_3": "",
+    "product_price_0": "NT.1780",
+    "product_price_1": "NT.1980",
+    "product_price_2": "NT.2480",
+    "product_price_3": ""
+  }
+]

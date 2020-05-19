@@ -1,0 +1,793 @@
+@import "_style-guild.scss";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+
+body {
+  margin: 0;
+  position: relative;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  // NAVBAR
+  #nav {
+    width: 100vw;
+    float: right;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 9999;
+    .container {
+      padding-left: 25%;
+      align-items: center;
+      .logo {
+        max-width: 50px;
+        margin-right: 100px;
+      }
+    }
+  }
+  // 關於小茶&熱銷商品
+  #section_1 {
+    width: 100%;
+
+    .container-fluid {
+      width: 100%;
+
+      // #banner_area {
+      //   width: calc(100% - 1140px);
+      //   height: 1080px;
+      //   position: fixed;
+      //   top: 0;
+      //   left: 0;
+      //   z-index: -1;
+      //   @media (max-width:992px) {
+
+      //   }
+      //   ul {
+      //     list-style: none;
+      //     padding-left: 0;
+
+      //     li {
+      //       // width: 800px;
+      //       position: relative;
+      //       left: 0px;
+      //       top: 0px;
+      //       z-index: 998;
+      //       background-repeat: no-repeat;
+      //       background-position-x: left;
+      //       background-position-y: top;
+      //       background-size: cover;
+      //       height: 100vh;
+      //       overflow: hidden;
+
+      //       .slick-slide {
+      //         float: left;
+      //         min-height: 1px;
+
+      //         img {
+      //           display: block;
+      //         }
+      //       }
+
+      //       .mainTxt {
+      //         position: absolute;
+      //         top: 50%;
+      //         left: 50%;
+      //         transform: translate(-50%, -50%);
+      //         z-index: 10;
+
+      //         img {
+      //           backface-visibility: hidden;
+      //         }
+      //       }
+      //     }
+      //   }
+
+      //   .slick-slider {
+      //     position: relative;
+      //     display: block;
+      //     box-sizing: border-box;
+      //     user-select: none;
+      //     touch-action: pan-y;
+      //   }
+      // }
+      #banner_area {
+        width: calc(100% - 1140px);
+        // height: 1080px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        // background-image: url("../img/72ppi/img1.png");
+        // background-repeat: no-repeat;
+        z-index: 10;
+
+        @media (max-width: 1380px) {
+          width: 100%;
+          z-index: -1;
+          position: relative;
+        }
+
+        .banner_box {
+          ul {
+            list-style: none;
+            padding-left: 0px;
+            margin: 0;
+
+            li {
+              width: 100%;
+              position: relative;
+              left: 0px;
+              top: 0px;
+              z-index: 998;
+              background-repeat: no-repeat;
+              background-position-x: left;
+              background-position-y: top;
+              background-size: cover;
+              height: 100vh;
+              overflow: hidden;
+
+              @media (max-width: 1380px) {
+                max-height: calc(100vh - 56px);
+              }
+
+              @media (max-width: 920px) {
+                height: auto;
+              }
+
+              .slick-slide {
+                float: left;
+                min-height: 1px;
+
+                img {
+                  display: block;
+                }
+              }
+
+              .mainTxt {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+
+                @media (max-width: 1024px) {
+                  top: 30%;
+                  left: 52%;
+                }
+
+                @media (max-width: 768px) {
+                  transform: translate(-120%, -40%) scale(0.7);
+                }
+
+                img {
+                  backface-visibility: hidden;
+                }
+              }
+
+              img.main {
+                width: 100%;
+                display: block;
+                position: relative;
+                z-index: 5;
+                opacity: 0;
+              }
+            }
+          }
+
+          .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            user-select: none;
+            touch-action: pan-y;
+          }
+        }
+      }
+      #right_area {
+        max-width: 1140px;
+        float: right;
+        background-image: url("../img/72ppi/br-05.jpg");
+        display: flex;
+        position: relative;
+        @media (max-width: 1380px) {
+          width: 100%;
+          max-width: 1380px;
+        }
+        .title_box {
+          position: relative;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          writing-mode: tb-rl;
+          @media (max-width: 992px) {
+            position: absolute;
+            top: 6%;
+            left: 10%;
+            writing-mode: lr-tb;
+          }
+          h2 {
+            @include h2();
+            top: 20%;
+            @media (max-width: 992px) {
+              position: unset;
+            }
+          }
+          &::before {
+            content: "";
+            bottom: calc(50% + 75px);
+            display: block;
+            width: 1px;
+            height: 500px;
+            background: #e1e1e1;
+            left: 50%;
+            position: absolute;
+            @media (max-width: 992px) {
+              display: none;
+            }
+          }
+          &::after {
+            content: "";
+            top: calc(50% + 75px);
+            display: block;
+            width: 1px;
+            height: 600px;
+            background: #e1e1e1;
+            left: 50%;
+            position: absolute;
+
+            @media (max-width: 992px) {
+              left: 100%;
+              top: 2%;
+              width: 200%;
+              height: 1px;
+            }
+          }
+
+          strong {
+            @include strong();
+            @media (max-width: 992px) {
+              top: 170%;
+              left: 1%;
+            }
+          }
+        }
+        .title1_box {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0px;
+          writing-mode: tb-rl;
+          @media (max-width: 992px) {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            writing-mode: lr-tb;
+          }
+
+          h2 {
+            @include h2();
+            top: 55%;
+            @media (max-width: 992px) {
+              position: unset;
+            }
+
+            &::before {
+              content: "";
+              bottom: calc(50% + 75px);
+              display: block;
+              width: 1px;
+              height: 100px;
+              background: #e1e1e1;
+              left: 50%;
+              position: absolute;
+              @media (max-width: 992px) {
+                display: none;
+              }
+            }
+            &::after {
+              content: "";
+              top: calc(50% + 75px);
+              display: block;
+              width: 1px;
+              height: 997px;
+              background: #e1e1e1;
+              left: 50%;
+              position: absolute;
+              @media (max-width: 992px) {
+                left: 100%;
+                top: 165%;
+                width: 200%;
+                height: 1px;
+              }
+            }
+
+            strong {
+              @include strong();
+              @media (max-width: 992px) {
+                top: 170%;
+                left: 1%;
+              }
+            }
+          }
+        }
+        .container {
+          width: 80%;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+          margin: 0 auto;
+          padding-left: 5%;
+          @media (max-width: 1140px) {
+            width: 100%;
+            // padding: 0;
+          }
+          @media (max-width: 992px) {
+            width: 100%;
+            padding: 0 10px 0 10px;
+            margin: 0 auto;
+          }
+          .about {
+            width: 100%;
+            margin-top: 205px;
+            .about_title {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              width: 100%;
+
+              .about_text {
+                text-align: center;
+                width: 50%;
+                h1 {
+                  font-size: $big_title;
+                }
+                span {
+                  font-size: $vice_text;
+                }
+              }
+              .about_text2 {
+                text-align: center;
+                width: 50%;
+                font-size: $text;
+              }
+              .about_picture {
+                width: 100%;
+                margin-top: 72px;
+              }
+            }
+          }
+          .product {
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            margin-top: 242px;
+            flex-wrap: wrap;
+
+            .product_tilte {
+              width: 100%;
+              text-align: center;
+              h1 {
+                font-size: $big_title;
+                margin-bottom: 20px;
+              }
+              span {
+                font-size: $text;
+              }
+            }
+            .product_picture {
+              width: 100%;
+              margin-top: 40px;
+            }
+          }
+          .product2 {
+            width: 100%;
+            padding-bottom: 72px;
+            .product2_tilte {
+              text-align: center;
+              margin-top: 72px;
+              span {
+                font-size: $small_title;
+              }
+            }
+            .swiper {
+              width: 100%;
+              .swiper-container {
+                margin-top: 40px;
+                width: 100%;
+                .swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  background: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+              }
+            }
+            .product2exp {
+              width: 100%;
+              background-color: $co_color;
+              display: flex;
+              padding: 10px;
+              align-items: flex-end;
+              margin-bottom: 72px;
+
+              .product2exp_p1 {
+                width: 200px;
+                text-align: center;
+                position: relative;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  width: 2px;
+                  height: 80px;
+                  background-color: wheat;
+                  display: block;
+                  left: 200px;
+                  bottom: 2px;
+                }
+              }
+              .product2exp_p2 {
+                width: calc(100% - 200px);
+                padding: 10px 20px;
+                text-align: start;
+                .p_p {
+                  margin-left: 50px;
+                  span {
+                    margin-left: 250px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // 茶內涵
+  #section_2 {
+    position: relative;
+    height: 3000px;
+    clear: both;
+    z-index: 9999;
+
+    .parallax-window {
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      background-image: url("../img/72ppi/1.png");
+      background-position: center;
+      background-size: cover;
+      .line_box {
+        width: 1140px;
+        position: relative;
+        height: 100%;
+        float: right;
+        .title3_box {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0px;
+          writing-mode: tb-rl;
+          z-index: 10;
+
+          h2 {
+            @include h2();
+            top: 50%;
+
+            &::before {
+              content: "";
+              bottom: calc(50% + 75px);
+              display: block;
+              width: 1px;
+              height: 390px;
+              background: #888;
+              left: 50%;
+              position: absolute;
+            }
+            &::after {
+              content: "";
+              top: calc(50% + 75px);
+              display: block;
+              width: 1px;
+              height: 393px;
+              background: #888;
+              left: 50%;
+              position: absolute;
+            }
+
+            strong {
+              @include strong();
+            }
+          }
+        }
+      }
+
+      .title {
+        color: $co_color;
+        position: absolute;
+        left: 60%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .parallax-text {
+        color: black;
+        position: absolute;
+        left: 60%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        line-height: 4;
+      }
+    }
+  }
+  // 精選商品&分店資訊
+  #section_3 {
+    width: 1140px;
+    float: right;
+    background-image: url(../img/72ppi/br-07.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .title4_box {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      writing-mode: tb-rl;
+
+      h2 {
+        @include h2();
+        top: 22%;
+
+        &::before {
+          content: "";
+          bottom: calc(50% + 75px);
+          display: block;
+          width: 1px;
+          height: 475px;
+          background: #e1e1e1;
+          left: 50%;
+          position: absolute;
+        }
+        &::after {
+          content: "";
+          top: calc(50% + 75px);
+          display: block;
+          width: 1px;
+          height: 500px;
+          background: #e1e1e1;
+          left: 50%;
+          position: absolute;
+        }
+
+        strong {
+          @include strong();
+        }
+      }
+    }
+    .title5_box {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0px;
+      writing-mode: tb-rl;
+
+      h2 {
+        @include h2();
+        top: 80%;
+
+        &::before {
+          content: "";
+          bottom: calc(50% + 75px);
+          display: block;
+          width: 1px;
+          height: 900px;
+          background: #e1e1e1;
+          left: 50%;
+          position: absolute;
+        }
+        &::after {
+          content: "";
+          top: calc(50% + 75px);
+          display: block;
+          width: 1px;
+          height: 425px;
+          background: #e1e1e1;
+          left: 50%;
+          position: absolute;
+        }
+
+        strong {
+          @include strong();
+        }
+      }
+    }
+    #right_area2 {
+      max-width: 1140px;
+      float: right;
+      background-image: url("../img/72ppi/br-05.jpg");
+      display: flex;
+      @media (max-width: 1380px) {
+        width: 100%;
+        max-width: 1380px;
+      }
+      .container {
+        width: 80%;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+        padding-left: 5%;
+        @media (max-width: 1140px) {
+          width: 100%;
+          // padding: 0;
+        }
+        @media (max-width: 992px) {
+          width: 100%;
+          padding: 0 10px 0 10px;
+          margin: 0 auto;
+        }
+        // 熱銷商品
+        .store {
+          justify-content: space-between;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          padding-top: 72px;
+          text-align: center;
+
+          .store_picture {
+            width: 240px;
+          }
+          .store_title {
+            width: 100%;
+            margin-top: 40px;
+            h1 {
+              font-size: $big_title;
+              margin-bottom: 20px;
+            }
+            span {
+              font-size: $text;
+            }
+          }
+          .store_picture2 {
+            margin-top: 20px;
+            max-width: 100%;
+          }
+        }
+        // 分店資訊
+        .branch {
+          display: flex;
+          flex-wrap: wrap;
+          width: 865px;
+          margin: 0 auto;
+          margin-top: 170px;
+          margin-bottom: 70px;
+          .branch_picture {
+            width: 240px;
+            margin-top: 72px;
+          }
+          .branch_text {
+            width: 515px;
+            margin-left: 72px;
+            margin-top: 72px;
+          }
+        }
+      }
+    }
+  }
+  // 聯絡我們
+  #section_4 {
+    max-height: 450px;
+    background-color: $co_color;
+    clear: both;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    // position: relative;
+    justify-content: space-between;
+
+    .line2_box {
+      width: 1140px;
+      height: 300px;
+      // position: absolute;
+      position: absolute;
+      right: 0;
+
+      .title6_box {
+        top: 0;
+        bottom: 0;
+        left: 0px;
+        writing-mode: tb-rl;
+
+        h2 {
+          @include h2();
+          top: 30%;
+
+          &::before {
+            content: "";
+            bottom: calc(50% + 75px);
+            display: block;
+            width: 1px;
+            height: 69px;
+            background: #888;
+            left: 50%;
+            position: absolute;
+          }
+          &::after {
+            content: "";
+            top: calc(50% + 75px);
+            display: block;
+            width: 1px;
+            height: 190px;
+            background: #888;
+            left: 50%;
+            position: absolute;
+          }
+
+          strong {
+            @include strong();
+          }
+        }
+      }
+    }
+
+    .contactUs {
+      min-width: 40%;
+      text-align: start;
+      padding: 100px 100px;
+      line-height: 2;
+    }
+
+    .contactUS_picture {
+      min-width: 40%;
+    }
+  }
+  // 版權聲明
+  #footer {
+    width: 100vw;
+    background-color: $footer_color;
+    float: right;
+    text-align: center;
+    text-justify: auto;
+  }
+}
+
+
+.background {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.background .tea img {
+  width: 100%;
+  margin: 0;
+}
+.background .waters {
+  position: absolute;
+  left: 69.5vw;
+  top: 15vw;
+  transform: translate(-27%, -30%);
+  clip-path: circle(50% at 50% 50%);
+  width: 20vw;
+  height: 20vw;
+  background-image: url("../img/tea_water2.png");
+  background-position: center;
+  background-size: cover;
+}
+.background .logo {
+  position: absolute;
+  top: 15vw;
+  left: 15vw;
+}
+.background .logo img {
+  display: none;
+}
+.background .index {
+  display: none;
+}
+.background .text_bar {
+  position: absolute;
+  top: 15vw;
+  left: 17.5vw;
+  width: 40vw;
+}

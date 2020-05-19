@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>書人不輸陣-茶葉風味系列</title>
+
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- product.css -->
+	<link rel="stylesheet" href="../scss/product.css">
+
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<!-- swiper cdn -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+
+	<!--fontawesome cdn  -->
+	<script src="https://kit.fontawesome.com/8a9c9eefca.js" crossorigin="anonymous"></script>	
+
+</head>
+
+<body>
+	<!-- nav -->
+	<nav class="navbar navstart navbar-expand-lg navbar-light " style="background-color: #5F7E45;">
+
+		<div class="container">
+			<a class="navbar-brand" href="#">小茶栽堂</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item ">
+						<a class="nav-link" href="#">關於小茶</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">熱銷產品</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">茶內涵</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">分店資訊</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- banner -->
+	<section id="banner_area">
+		<div class="banner_box">
+			<ul id="banner" class="slick-initialized slick-slider">
+				<!-- 套用圖片路徑 -->
+				<li style="background-image: url(../img/02-product/banner03.jpg);" class="slick-slide">
+					<!-- 套用文字圖片 -->
+					<div class="mainTxt">
+						<img alt="" src="../img/02-product/banner文03.png" />
+					</div>
+
+					<!-- mainTxt 套用圖片路徑 -->
+					<img class="main"
+						src="https://www.chioushan.com/upload/banner_list/f9861c0ca6d5aa6ee562e7cbbbfac174.jpg"
+						alt="banner">
+
+				</li>
+
+			</ul>
+		</div>
+		<div style="clear: both;"></div>
+
+	</section>
+
+	<!-- product -->
+	<section id="main_product">
+
+		<!-- 中間線條區塊 -->
+		<div class="title_box">
+
+			<h2>茶葉風味<strong>Tea Product</strong></h2>
+
+		</div>
+
+		<!-- 產品系列選項 -->
+		<div class="container ">
+			<div class="row justify-content-left  about_padding product_list">
+				<div class="product_list_1">清香系列</div>
+				<div class="product_list_2">熟香系列</div>
+				<div class="product_list_3">特殊風味</div>
+				<div class="product_list_4">窖藏系列</div>
+			</div>
+
+			<div id="pd_list" class="row justify-content-center products product_s">
+				<div id="c_1_1" class="product_1 product_a"
+					 style="background-image: url(../img/tea_menu/Aged_can_DongDing_oo.jpg );">
+					<div id="fonts1" class="fonts_a">不知春<br>NT.880</div>
+				</div>
+				<div id="c_1_2" class="product_2 product_b"
+					 style="background-image: url(../img/tea_menu/Roasted_can_Shanlinsi.jpg );">
+					<div id="fonts2" class="fonts_b">阿里山金萱<br>NT.980</div>
+				</div>
+				<div id="c_1_3" class="product_3 product_c"
+					 style="background-image: url(../img/tea_menu/Special_can_GueiFei.jpg );">
+					<div id="fonts3" class="fonts_c">清香阿里山烏龍<br>NT.1380</div>
+				</div>
+				<div id="c_1_4" class="product_4 product_d"
+					 style="background-image: url(../img/tea_menu/Refreshing_can_Lishan.jpg );">
+					<div id="fonts4" class="fonts_d">清香杉林溪烏龍<br>NT.1980</div>
+				</div>
+			</div>
+
+			<!-- <div class="row d-flex justify-content-center  products">
+				<div class="product_1" style="background-image: url(../img/tea_menu/Refreshing_Sijichun.jpg );">
+					<div id="fonts1">不知春<br>NT.880</div>
+				</div>
+
+				<div class="product_2" style="background-image: url(../img/tea_menu/Refreshing_Alishan_jing.jpg );">
+					<div id="fonts2">阿里山金萱<br>NT.980</div>
+				</div>
+
+				<div class="product_3" style="background-image: url(../img/tea_menu/Refreshing_Alishan_oo.jpg );">
+					<div id="fonts3">清香阿里山烏龍<br>NT.1380</div>
+				</div>
+
+				<div class="product_4" style="background-image: url(../img/tea_menu/Refreshing_Shanlinsi.jpg );">
+					<div id="fonts3">清香杉林溪烏龍<br>NT.1980</div>
+				</div>
+
+			</div> -->
+			<!--			ajax 插入~-->
+			<div id="details" class="container p-0 detail" style="display: none"></div>
+			<!--			ajax 插入~-->
+		</div>
+	</section>
+
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer_margin">
+
+			<div>電話:+886-2-8772-8589</br>營業時間: MON-SUN 11:00-20:00</br>地址:台北市大安區敦化南路1段270巷29號<i class="fas fa-map-marker-alt"></i>MAP</br>Follow Us :
+				<a href=""><i class="fab fa-facebook-square icon_size"></i></a>
+				<a href=""><i class="fab fa-twitter-square icon_size"></i></a>
+				<a href=""><i class="fab fa-instagram-square icon_size"></i>
+				</a></div>
+
+			<div class="copyright">Copyright © 2020 小茶栽堂 Co., Ltd</div>
+
+
+		</div>
+	</footer>
+	<!-- <i class="fab fa-instagram-square"></i> -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+
+
+	<script src="../js/home_js.js"></script>
+</body>
+
+</html>

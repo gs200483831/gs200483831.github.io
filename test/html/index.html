@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>小茶栽堂</title>
+	
+	<!-- bootstrap cdn 連結 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- scss 連結 -->
+	<link rel="stylesheet" href="../scss/style.css">
+	<!-- swiper cdn -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<!-- AOS cdn -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="background">
+	<!--	茶杯+茶壺大圖-->
+	<div class="tea">
+		<img class="cup" src="../img/tea_cup.png" alt="">
+	</div>
+	<div class="waters"></div>
+	<!--	茶杯+茶壺 小圖-->
+	<div class="logo">
+		<img src="../img/logo.png" alt="">
+		<div class="text_bar"></div>
+	</div>
+</div>
+<!--主頁面-->
+<div class="index" style="display: none">
+	<!-- NAV導覽列 -->
+	<nav id="nav" class="navbar navbar-expand-lg navbar-light  lax" data-lax-opacity="0 0, 70 1, 200 1 "
+	     style="background-color: #5f7e45;">
+		<div class="container ">
+			<div class="row ">
+				<div class="col d-flex logo">
+					<a class="navbar-brand " href="#"><img src="../img/72ppi/LOGO.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+					        data-target="#navbarSupportedContent">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+				<div class="col">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="../img/72ppi/nav1.png" alt=""></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="../img/72ppi/nav2.png" alt=""></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="../img/72ppi/nav3.png" alt=""></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><img src="../img/72ppi/nav4.png" alt=""></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</nav>
+	<!-- 關於小茶and熱銷產品 -->
+	<section id="section_1">
+		<div class="container-fluid " style="padding: 0;">
+			<section id="banner_area">
+				<div class="banner_box">
+					<ul id="banner" class="slick-initialized slick-slider">
+						<li style="background-image:url(https://www.chioushan.com/upload/banner_list/f9861c0ca6d5aa6ee562e7cbbbfac174.jpg)"
+						    class="slick-slide">
+							
+							<div class="mainTxt">
+								<img alt=""
+								     src="https://www.chioushan.com/upload/download_files/cc652dd9b86c90da3a2ce9824c0bec98.png" />
+							</div>
+							
+							<!-- mainTxt -->
+							<!-- <img class="main"
+								src="https://www.chioushan.com/upload/banner_list/f9861c0ca6d5aa6ee562e7cbbbfac174.jpg"
+								alt="banner"> -->
+						
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="right_area">
+				<div class="title_box">
+					<h2>關於小茶栽堂<strong>About Us</strong></h2>
+				</div>
+				<div class="title1_box">
+					<h2>熱銷產品<strong>Tea Product</strong></h2>
+				</div>
+				<div class="container">
+					<div class="about ">
+						<div class="about_title ">
+							<div class="about_text ">
+								<h1>小茶栽堂</br>
+								</h1>
+								<span>Tea planting hall</span>
+							
+							
+							</div>
+							<div class="about_text2" data-aos="fade-left" data-aos-offset="70">
+								<div>
+									<p>每季為您送上新葉<br> 讓唇齒口舌及每體細胞<br>
+										品嚐茶的原始風味 耐久的清甜<br>
+										有種反璞歸真的美好
+									</p>
+								</div>
+							</div>
+							<div class="about_picture ">
+								<img src="../img/72ppi/1-06.jpg" width="100%" alt="">
+							</div>
+						
+						</div>
+					</div>
+					<div class="product ">
+						
+						<div class="product_tilte ">
+							<h1>秉持愛茶人挑剔的精神</h1>
+							<span>嚴選台灣優質季節茶</span>
+						</div>
+						<div class="product_picture ">
+							<img src="../img/72ppi/2.png" width="100%" alt="">
+						</div>
+					
+					
+					
+					
+					</div>
+					<div class="product2 ">
+						<div class="product2_tilte ">
+							<span>自然溫潤 清香不苦澀 好茶的味道 入口就知道!</span>
+						</div>
+						<div class="swiper ">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="../img/72ppi/tea1.png" width="100%" alt="">
+									</div>
+									<div class="swiper-slide">Slide 2</div>
+									<div class="swiper-slide">Slide 3</div>
+									<div class="swiper-slide">Slide 4</div>
+									<div class="swiper-slide">Slide 5</div>
+									<div class="swiper-slide">Slide 6</div>
+									<div class="swiper-slide">Slide 7</div>
+									<div class="swiper-slide">Slide 8</div>
+									<div class="swiper-slide">Slide 9</div>
+									<div class="swiper-slide">Slide 10</div>
+								</div>
+								<!-- Add Pagination -->
+								<div class="swiper-pagination"></div>
+								<!-- Add Arrows -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+						</div>
+						<div class="product2exp">
+							<div class="product2exp_p1">
+								<span>清新系列</span>
+								<h1>黑茶</h1>
+							</div>
+							<div class="product2exp_p2">
+								<p class="p_p">NT.430/每罐內含20袋茶包
+									<a href="Product.html"><span>/更多商品/</span></a>
+								</p>
+							
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<!-- parallax -->
+	<section id="section_2">
+		
+		<div class="parallax-window">
+			<div class="line_box">
+				<div class="title3_box">
+					<h2>茶內涵<strong>Tea Knowledge</strong></h2>
+				</div>
+			</div>
+			
+			
+			<!-- <h1 class="title lax"
+				data-lax-opacity="(document.querySelector('#section_2').offsetTop) 0,(document.querySelector('#section_2').offsetTop+1000) 1">
+				喝茶一點都不難</h1> -->
+			<div class="title lax"
+			     data-lax-opacity="(document.querySelector('#section_2').offsetTop) 0,(document.querySelector('#section_2').offsetTop+500) 1">
+				<img src="../img/teafont.png" width="100%" alt="">
+			</div>
+			
+			<p class="parallax-text lax"
+			   data-lax-opacity="(document.querySelector('#section_2').offsetTop+250) 0,(document.querySelector('#section_2').offsetTop+1200) 1">
+				小茶栽堂教您一分鐘之內學會品茶</br>
+				品嚐一杯來自這片土地的純淨美好滋味</br>
+				/來去學品茶/
+			
+			</p>
+			
+			<!-- <p class="parallax-text lax"
+				data-lax-opacity="(document.querySelector('#section_2').offsetTop+1000) 0,(document.querySelector('#section_2').offsetTop+2000) 1,(document.querySelector('#section_2').offsetTop+3000) 1,(document.querySelector('#section_2').offsetTop+4000) 0">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae, cumque placeat incidunt
+				perferendis numquam earum, animi porro molestiae deleniti corrupti eligendi nostrum repellendus,
+				cupiditate quia dolorum autem dolores rem temporibus expedita? Itaque, eos dolore. Quae rem repellat
+				incidunt saepe beatae voluptatum commodi perferendis consectetur a sequi tempore rerum dolorum dolore,
+				deleniti vel aperiam modi accusamus assumenda reprehenderit. Aliquid quasi impedit quas nobis totam
+				provident sapiente. Harum culpa, aspernatur provident labore veritatis ipsum non nihil esse, in sapiente
+				quas! Omnis!
+			</p> -->
+		</div>
+	</section>
+	<!-- 精選商品and 分店資訊 -->
+	<section id="section_3">
+		<div class="title4_box">
+			<h2>精選商品<strong>Hot Product</strong></h2>
+		</div>
+		<div class="title5_box">
+			<h2>分店資訊<strong>Store</strong></h2>
+		</div>
+		<div id="right_area2">
+			<div class="container">
+				<div class="store">
+					<div class="store_picture"><img src="../img/72ppi/p-08.jpg" width="100%" alt=""></div>
+					<div class="store_picture"><img src="../img/72ppi/p-09.jpg" width="100%" alt="">
+					</div>
+					<div class="store_picture"><img src="../img/72ppi/p-10.jpg" alt="" width="100%"></div>
+					
+					<div class="store_title">
+						<h1>採用友善的「自然農法」栽培</h1>
+						<span>將台灣的美好介紹給世界</span>
+						<div class="store_picture2"><img src="../img/72ppi/3.png" width="100%" alt=""></div>
+					</div>
+				
+				</div>
+				<div class="branch">
+					<div class="branch_picture"><img src="../img/中山店1.jpg" alt="" width="100%"></div>
+					<div class="branch_text">
+						<h2>大安創始店</h2></br>
+						<span>電話:+886-2-8772-8589</span></br>
+						<span>營業時間: MON-SUN 11:00-20:00</span>
+						</br>
+						<span>地址:台北市大安區敦化南路1段270巷29號</span>
+						</br>
+						<a href="">Map</a>
+					</div>
+					<div class="branch_picture"><img src="../img/中山店-02.jpg" alt=""></div>
+					<div class="branch_text">
+						<h2>永康旗艦店</h2></br>
+						<span>電話:+886-2-3393-2198</span></br>
+						<span>營業時間: MON-SUN 11:00-20:00</span>
+						</br>
+						<span>地址:台北市大安區永康街7-1號</span>
+						</br>
+						<a href="">Map</a>
+					</div>
+					<div class="branch_picture"><img src="../img/中山店-03.jpg" alt=""></div>
+					<div class="branch_text mb-72">
+						<h2>中山店</h2></br>
+						<span>電話:+886-2-2581-8733</span></br>
+						<span>營業時間: MON-SUN 11:00-20:00</span>
+						</br>
+						<span>地址:台北市中山區中山北路2段77之1號</span>
+						</br>
+						<a href="">Map</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section_4">
+		<div class="contactUs">小茶栽堂</br>
+			電話:+886-2-8772-8589 </br>
+			營業時間: MON-SUN 11:00-20:00 </br>
+			地址:台北市大安區敦化南路1段270巷29號
+			<a href="">Map</a>
+		</div>
+		<div class="line2_box">
+			<div class="title6_box">
+				<h2>聯絡我們<strong>Contact Us</strong></h2>
+			</div>
+		</div>
+		
+		
+		<div class="contactUs_picture"><img src="../img/72ppi/foot.png" alt="" width="80%" ></div>
+	</section>
+	<!-- footer -->
+	<footer id="footer">Copyright © 2020 小茶栽堂 Co., Ltd</footer>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js'></script>
+
+
+<!--自己寫的-->
+<script src="../js/word.js"></script>
+<script src='../js/book_js.js'></script>
+<!-- swiper js -->
+<script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+
+
+</body>
+
+</html>

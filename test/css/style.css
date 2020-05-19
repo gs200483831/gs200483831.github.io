@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.background {
+    background-color: khaki;
+    width: 100%;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.tea img{
+    width: 100%;
+    margin: 0;
+}
+
+.waters {
+    position: absolute;
+    left: 69.5vw;
+    top: 15vw;
+    transform: translate(-27%,-30%);
+    clip-path: circle(50% at 50% 50%);
+    width:20vw;
+    height: 20vw;
+    background-image: url("../img/tea_water2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    position: absolute;
+    top: 15vw;
+    left: 15vw;
+}
+.logo img{
+    display:none;
+}
+.index{
+    width: 50px;
+    height: 50px;
+    background-color: blue ;
+    display: none;
+}
+.text_bar{
+    position: absolute;
+    top: 15vw;
+    left: 17.5vw;
+    width: 40vw;
+}
