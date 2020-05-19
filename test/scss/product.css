@@ -441,6 +441,7 @@ body {
 @media (max-width: 411px) {
   #main_product .product_list .product_list_1, #main_product .product_list .product_list_2, #main_product .product_list .product_list_3, #main_product .product_list .product_list_4 {
     width: 100px;
+    font-size: 16px;
   }
 }
 
@@ -828,8 +829,8 @@ body {
 
 @media (max-width: 411px) {
   .detail_pd_img {
-    height: 18vh;
-    width: 87.56%;
+    height: 15vh;
+    width: 100%;
   }
 }
 
