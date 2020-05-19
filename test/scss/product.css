@@ -446,6 +446,7 @@ body h3 {
   width: 30px;
   text-align: center;
   font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 411px) {
@@ -622,6 +623,10 @@ body h3 {
 .mobileText .font-set {
   font-size: 18px;
   line-height: 200%;
+}
+
+#details {
+  margin-top: -100px !important;
 }
 
 .details .row {
