@@ -13,7 +13,7 @@ body {
 
 //此row 05/18新增
 .row {
-  margin: 0;
+  margin: 0!important;
 }
 
 .navstart {
@@ -383,15 +383,15 @@ body {
   }
 
 
-  .row {
-    margin-left: unset;
-    margin-right: unset;
+  // .row {
+  //   margin-left: unset;
+  //   margin-right: unset;
 
-    // @media (max-width: 1040px) {
-    //   width: 70%;
-    // }
+  //   @media (max-width: 1040px) {
+  //     width: 70%;
+  //   }
 
-  }
+  // }
 
   .about_padding {
     padding: 100px 0px 0px 150px;
@@ -618,6 +618,7 @@ body {
 }
 
 .product_top {
+
   padding: 115px 0px 0px 151px;
 
   @media (max-width: 992px) {
@@ -669,6 +670,7 @@ body {
 
   @media (max-width: 576px) {
     height: 512px;
+    margin-left: 0;
   }
 
   @media (max-width: 411px) {
@@ -685,6 +687,7 @@ body {
 
   @media (max-width: 325px) {
     height: 297px;
+    width: 95%;
   }
 }
 
@@ -696,11 +699,23 @@ body {
       content: "";
       display: block;
       width: 2px;
-      height: 87px;
-      background: rgb(41, 171, 226);
+      height: 70px;
+      background: #29abe2;
       left: -2%;
+      top: 31%;
       position: absolute;
+      @media (max-width: 1199.98px) {
+        top: 37.5%;
+      }
+      @media (max-width: 992px) {
+        top: 42.5%;
+      }
     }
+
+    h3{
+      line-height: 200%;
+    }
+
   }
 
   @media (max-width: 768px) {
@@ -720,11 +735,11 @@ body {
   }
 
   @media (max-width: 375px) {
-    margin-left: -5%;
+    margin-left: 3%;
   }
 
   @media (max-width: 320px) {
-    margin-left: 10%;
+    margin-left: 1%;
   }
 
   h2 {
@@ -771,7 +786,7 @@ body {
   }
 
   @media (max-width: 576px) {
-    height: 24vh;
+    height: 31vh;
 
   }
 
@@ -822,6 +837,10 @@ body {
   @media (max-width: 411px) {
     margin-left: 5%;
     padding-bottom: 0px;
+    h3{
+      font-size: 16px;
+    }
+
   }
 }
 

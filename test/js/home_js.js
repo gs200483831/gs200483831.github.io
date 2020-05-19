@@ -72,7 +72,6 @@ $.ajax({
                             <h2 class='margin-bottom'>${datas[product[i].id].title}</h2>
                             <div class="blueline">
                                 <h3 class='h3between'>${datas[product[i].id].text}
-                                <h3 class='margin-bottom'>觸動味蕾的驚喜口感</h3>
                             </div>
                             <h2>${datas[product[i].id].price}</h2>
                         </div>
