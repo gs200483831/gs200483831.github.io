@@ -441,7 +441,10 @@ body h3 {
   margin-top: 120px;
 }
 
-#main_product .product_list .product_list_1, #main_product .product_list .product_list_2, #main_product .product_list .product_list_3, #main_product .product_list .product_list_4 {
+#main_product .product_list .product_list_1,
+#main_product .product_list .product_list_2,
+#main_product .product_list .product_list_3,
+#main_product .product_list .product_list_4 {
   margin: 15px;
   width: 30px;
   text-align: center;
@@ -450,13 +453,19 @@ body h3 {
 }
 
 @media (max-width: 411px) {
-  #main_product .product_list .product_list_1, #main_product .product_list .product_list_2, #main_product .product_list .product_list_3, #main_product .product_list .product_list_4 {
+  #main_product .product_list .product_list_1,
+  #main_product .product_list .product_list_2,
+  #main_product .product_list .product_list_3,
+  #main_product .product_list .product_list_4 {
     width: 100px;
     font-size: 16px;
   }
 }
 
-#main_product .product_list .product_list_1:hover, #main_product .product_list .product_list_2:hover, #main_product .product_list .product_list_3:hover, #main_product .product_list .product_list_4:hover {
+#main_product .product_list .product_list_1:hover,
+#main_product .product_list .product_list_2:hover,
+#main_product .product_list .product_list_3:hover,
+#main_product .product_list .product_list_4:hover {
   margin: 15px;
   width: 30px;
   text-align: center;
@@ -466,7 +475,10 @@ body h3 {
 }
 
 @media (max-width: 411px) {
-  #main_product .product_list .product_list_1:hover, #main_product .product_list .product_list_2:hover, #main_product .product_list .product_list_3:hover, #main_product .product_list .product_list_4:hover {
+  #main_product .product_list .product_list_1:hover,
+  #main_product .product_list .product_list_2:hover,
+  #main_product .product_list .product_list_3:hover,
+  #main_product .product_list .product_list_4:hover {
     width: 100px;
   }
 }
@@ -520,7 +532,10 @@ body h3 {
   }
 }
 
-#main_product .product_s .product_a, #main_product .product_s .product_b, #main_product .product_s .product_c, #main_product .product_s .product_d {
+#main_product .product_s .product_a,
+#main_product .product_s .product_b,
+#main_product .product_s .product_c,
+#main_product .product_s .product_d {
   width: 350px;
   height: 250px;
   background-position-x: 50%;
@@ -531,7 +546,10 @@ body h3 {
 }
 
 @media (max-width: 1024px) {
-  #main_product .product_s .product_a, #main_product .product_s .product_b, #main_product .product_s .product_c, #main_product .product_s .product_d {
+  #main_product .product_s .product_a,
+  #main_product .product_s .product_b,
+  #main_product .product_s .product_c,
+  #main_product .product_s .product_d {
     width: 300px;
     margin-left: 60px;
     margin-right: 0px !important;
@@ -539,7 +557,10 @@ body h3 {
 }
 
 @media (max-width: 768px) {
-  #main_product .product_s .product_a, #main_product .product_s .product_b, #main_product .product_s .product_c, #main_product .product_s .product_d {
+  #main_product .product_s .product_a,
+  #main_product .product_s .product_b,
+  #main_product .product_s .product_c,
+  #main_product .product_s .product_d {
     width: 250px;
     margin-left: 20px;
     margin-right: 0px;
@@ -547,25 +568,37 @@ body h3 {
 }
 
 @media (max-width: 414px) {
-  #main_product .product_s .product_a, #main_product .product_s .product_b, #main_product .product_s .product_c, #main_product .product_s .product_d {
+  #main_product .product_s .product_a,
+  #main_product .product_s .product_b,
+  #main_product .product_s .product_c,
+  #main_product .product_s .product_d {
     margin-bottom: 100px;
     margin-left: 60px;
   }
 }
 
 @media (max-width: 375px) {
-  #main_product .product_s .product_a, #main_product .product_s .product_b, #main_product .product_s .product_c, #main_product .product_s .product_d {
+  #main_product .product_s .product_a,
+  #main_product .product_s .product_b,
+  #main_product .product_s .product_c,
+  #main_product .product_s .product_d {
     margin-bottom: 100px;
   }
 }
 
 @media (max-width: 320px) {
-  #main_product .product_s .product_a, #main_product .product_s .product_b, #main_product .product_s .product_c, #main_product .product_s .product_d {
+  #main_product .product_s .product_a,
+  #main_product .product_s .product_b,
+  #main_product .product_s .product_c,
+  #main_product .product_s .product_d {
     margin-left: 32px;
   }
 }
 
-.fonts_a, .fonts_b, .fonts_c, .fonts_d {
+.fonts_a,
+.fonts_b,
+.fonts_c,
+.fonts_d {
   width: 350px;
   padding: 15px;
   margin: 250px 0px 0px 0px;
@@ -574,13 +607,19 @@ body h3 {
 }
 
 @media (max-width: 1024px) {
-  .fonts_a, .fonts_b, .fonts_c, .fonts_d {
+  .fonts_a,
+  .fonts_b,
+  .fonts_c,
+  .fonts_d {
     width: 294px;
   }
 }
 
 @media (max-width: 768px) {
-  .fonts_a, .fonts_b, .fonts_c, .fonts_d {
+  .fonts_a,
+  .fonts_b,
+  .fonts_c,
+  .fonts_d {
     width: 250px;
   }
 }
@@ -669,6 +708,7 @@ body h3 {
 @media (max-width: 411px) {
   .imgbox {
     background-size: cover;
+    width: 300px;
   }
 }
 
@@ -705,24 +745,10 @@ body h3 {
 
 @media (max-width: 411px) {
   .detail_product {
-    padding: 0% 0px 0px 11.7%;
-    height: 370px;
-    width: 90vw;
+    width: 300px;
+    height: 300px;
     margin: 0;
     padding: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .detail_product {
-    height: 339px;
-  }
-}
-
-@media (max-width: 325px) {
-  .detail_product {
-    height: 297px;
-    width: 95%;
   }
 }
 
@@ -773,19 +799,19 @@ body h3 {
 
 @media (max-width: 411px) {
   .productText {
-    margin-left: -10%;
+    margin-left: -6%;
   }
   .productText h2 {
-    font-size: 24px;
+    font-size: 33px;
   }
   .productText h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
 @media (max-width: 375px) {
   .productText {
-    margin-left: 3%;
+    margin-left: -8%;
   }
 }
 

@@ -1,260 +1,259 @@
-
-  {
-    "c_1_1":{
-      "image_url": "..\/img\/tea_menu\/Refreshing_can_Sijichun.jpg",
-      "title": "不知春",
-      "text": "冬茶與春茶間的四季春<br>飄散濃郁的梔子花香",
-      "price": "880 NTD",
-      "image_url2": "..\/img\/tea_menu\/Refreshing_Sijichun.jpg",
-      "about": {
-        "name": "品名：不知春",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：不知春 200g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+{
+    "c_1_1": {
+        "image_url": "..\/img\/tea_menu\/Refreshing_can_Sijichun.jpg",
+        "title": "不知春",
+        "text": "冬茶與春茶間的四季春<br>飄散濃郁的梔子花香",
+        "price": "NT.880",
+        "image_url2": "..\/img\/tea_menu\/Refreshing_Sijichun.jpg",
+        "about": {
+            "name": "品名：不知春",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：不知春 200g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_1_2":{
-      "image_url": "..\/img\/tea_menu\/Refreshing_can_Alishan_jing.jpg",
-      "title": "阿里山金萱",
-      "text": "金萱樹種特有的奶糖香<br>觸動味蕾的驚喜口感",
-      "price": "980 NTD",
-      "image_url2": "..\/img\/tea_menu\/Refreshing_Alishan_jing.jpg",
-      "about": {
-        "name": "品名：阿里山金萱",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：阿里山金萱 200g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_1_2": {
+        "image_url": "..\/img\/tea_menu\/Refreshing_can_Alishan_jing.jpg",
+        "title": "阿里山金萱",
+        "text": "金萱樹種特有的奶糖香<br>觸動味蕾的驚喜口感",
+        "price": "NT.980",
+        "image_url2": "..\/img\/tea_menu\/Refreshing_Alishan_jing.jpg",
+        "about": {
+            "name": "品名：阿里山金萱",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：阿里山金萱 200g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_1_3":{
-      "image_url": "..\/img\/tea_menu\/Refreshing_can_Alishan_oo.jpg",
-      "title": "清香阿里山烏龍",
-      "text": "淡雅的花香和柔順的甘甜<br>品味高山茶迴盪口中的芬芳",
-      "price": "1380 NTD",
-      "image_url2": "..\/img\/tea_menu\/Refreshing_Alishan_oo.jpg",
-      "about": {
-        "name": "品名：清香阿里山烏龍",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：清香阿里山烏龍 200g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_1_3": {
+        "image_url": "..\/img\/tea_menu\/Refreshing_can_Alishan_oo.jpg",
+        "title": "清香阿里山烏龍",
+        "text": "淡雅的花香和柔順的甘甜<br>品味高山茶迴盪口中的芬芳",
+        "price": "NT.1380",
+        "image_url2": "..\/img\/tea_menu\/Refreshing_Alishan_oo.jpg",
+        "about": {
+            "name": "品名：清香阿里山烏龍",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：清香阿里山烏龍 200g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_1_4":{
-      "image_url": "..\/img\/tea_menu\/Refreshing_can_Shanlinsi.jpg",
-      "title": "清香杉林溪烏龍",
-      "text": "原始杉木林造就獨特的山頭氣<br>蘭花香中帶有木質基調的醇厚",
-      "price": "1980 NTD",
-      "image_url2": "..\/img\/tea_menu\/Refreshing_Shanlinsi.jpg",
-      "about": {
-        "name": "品名：清香杉林溪烏龍",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：清香杉林溪烏龍 200g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_1_4": {
+        "image_url": "..\/img\/tea_menu\/Refreshing_can_Shanlinsi.jpg",
+        "title": "清香杉林溪烏龍",
+        "text": "原始杉木林造就獨特的山頭氣<br>蘭花香中帶有木質基調的醇厚",
+        "price": "NT.1980",
+        "image_url2": "..\/img\/tea_menu\/Refreshing_Shanlinsi.jpg",
+        "about": {
+            "name": "品名：清香杉林溪烏龍",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：清香杉林溪烏龍 200g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_2_1":{
-      "image_url": "..\/img\/tea_menu\/Aged_can_DongDing_oo.jpg",
-      "title": "輕焙凍頂烏龍",
-      "text": "交織茶香和蜜香古早味<br>是記憶中的經典好味道",
-      "price": "980 NTD",
-      "image_url2": "..\/img\/tea_menu\/Roasted_LR_DongDing_oo.jpg",
-      "about": {
-        "name": "品名：輕焙凍頂烏龍",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：輕焙凍頂烏龍 200g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_2_1": {
+        "image_url": "..\/img\/tea_menu\/Aged_can_DongDing_oo.jpg",
+        "title": "輕焙凍頂烏龍",
+        "text": "交織茶香和蜜香古早味<br>是記憶中的經典好味道",
+        "price": "NT.980",
+        "image_url2": "..\/img\/tea_menu\/Roasted_LR_DongDing_oo.jpg",
+        "about": {
+            "name": "品名：輕焙凍頂烏龍",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：輕焙凍頂烏龍 200g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_2_2":{
-      "image_url": "..\/img\/tea_menu\/Roasted_can_LR_Alishan_oo.jpg",
-      "title": "輕焙阿里山烏龍",
-      "text": "經文火烘焙的阿里山烏龍<br>轉化出高山茶內斂的花果甜香",
-      "price": "1380 NTD",
-      "image_url2": "..\/img\/tea_menu\/Roasted_LR_Alishan_oo.jpg",
-      "about": {
-        "name": "品名：輕焙阿里山烏龍",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：輕焙阿里山烏龍 200g+_0.3g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_2_2": {
+        "image_url": "..\/img\/tea_menu\/Roasted_can_LR_Alishan_oo.jpg",
+        "title": "輕焙阿里山烏龍",
+        "text": "經文火烘焙的阿里山烏龍<br>轉化出高山茶內斂的花果甜香",
+        "price": "NT.1380",
+        "image_url2": "..\/img\/tea_menu\/Roasted_LR_Alishan_oo.jpg",
+        "about": {
+            "name": "品名：輕焙阿里山烏龍",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：輕焙阿里山烏龍 200g+_0.3g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_2_3":{
-      "image_url": "..\/img\/tea_menu\/Roasted_can_LR_Shanlinsi.jpg",
-      "title": "輕焙杉林溪烏龍",
-      "text": "獨家烘焙法引出無瑕的細緻蜜味<br>是小茶栽堂輕烘焙茶種的自信之作",
-      "price": "1980 NTD",
-      "image_url2": "..\/img\/tea_menu\/Roasted_LR_Shanlinsi.jpg",
-      "about": {
-        "name": "品名：輕焙杉林溪烏龍",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：輕焙杉林溪烏龍 200g+_0.3g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_2_3": {
+        "image_url": "..\/img\/tea_menu\/Roasted_can_LR_Shanlinsi.jpg",
+        "title": "輕焙杉林溪烏龍",
+        "text": "獨家烘焙法引出無瑕的細緻蜜味<br>是小茶栽堂輕烘焙茶種的自信之作",
+        "price": "NT.1980",
+        "image_url2": "..\/img\/tea_menu\/Roasted_LR_Shanlinsi.jpg",
+        "about": {
+            "name": "品名：輕焙杉林溪烏龍",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：輕焙杉林溪烏龍 200g+_0.3g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_2_4":{
-      "image_url": "..\/img\/tea_menu\/Roasted_can_Shanlinsi.jpg",
-      "title": "深焙杉林溪烏龍",
-      "text": "琥珀色的茶湯飄逸濃郁焦香<br>濃烈的口感保有成熟的甘味",
-      "price": "1980 NTD",
-      "image_url2": "..\/img\/tea_menu\/Roasted_Shanlinsi.jpg",
-      "about": {
-        "name": "品名：深焙杉林溪烏龍",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：深焙杉林溪烏龍 200g+_0.3g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_2_4": {
+        "image_url": "..\/img\/tea_menu\/Roasted_can_Shanlinsi.jpg",
+        "title": "深焙杉林溪烏龍",
+        "text": "琥珀色的茶湯飄逸濃郁焦香<br>濃烈的口感保有成熟的甘味",
+        "price": "NT.1980",
+        "image_url2": "..\/img\/tea_menu\/Roasted_Shanlinsi.jpg",
+        "about": {
+            "name": "品名：深焙杉林溪烏龍",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：深焙杉林溪烏龍 200g+_0.3g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_3_1":{
-      "image_url": "..\/img\/tea_menu\/Special_can_Jasmine.jpg",
-      "title": "白毫茉莉",
-      "text": "稀有珍貴的品種「白毛猴」<br>與茉莉花「窨製」夢幻般的香甜口感",
-      "price": "880 NTD",
-      "image_url2": "..\/img\/tea_menu\/Special_Jasmine.jpg",
-      "about": {
-        "name": "品名：白毫茉莉",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：白毫茉莉 200g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_3_1": {
+        "image_url": "..\/img\/tea_menu\/Special_can_Jasmine.jpg",
+        "title": "白毫茉莉",
+        "text": "稀有珍貴的品種「白毛猴」<br>與茉莉花「窨製」夢幻般的香甜口感",
+        "price": "NT.880",
+        "image_url2": "..\/img\/tea_menu\/Special_Jasmine.jpg",
+        "about": {
+            "name": "品名：白毫茉莉",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：白毫茉莉 200g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_3_2":{
-      "image_url": "..\/img\/tea_menu\/Special_can_WunShan.jpg",
-      "title": "桂香包種",
-      "text": "細膩精湛的揉捻製茶工藝<br>飄逸的桂花香融合山林的自然氣息",
-      "price": "680 NTD",
-      "image_url2": "..\/img\/tea_menu\/Special_WunShan.jpg",
-      "about": {
-        "name": "品名：桂香包種",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：桂香包種 100g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_3_2": {
+        "image_url": "..\/img\/tea_menu\/Special_can_WunShan.jpg",
+        "title": "桂香包種",
+        "text": "細膩精湛的揉捻製茶工藝<br>飄逸的桂花香融合山林的自然氣息",
+        "price": "NT.680",
+        "image_url2": "..\/img\/tea_menu\/Special_WunShan.jpg",
+        "about": {
+            "name": "品名：桂香包種",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：桂香包種 100g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_3_3":{
-      "image_url": "..\/img\/tea_menu\/Special_can_LR_WunShan.jpg",
-      "title": "穀香包種",
-      "text": "包種茶經烘焙轉化的穀香<br>品味樸實怡人的大地氣息",
-      "price": "680 NTD",
-      "image_url2": "..\/img\/tea_menu\/Special_LR_WunShan.jpg",
-      "about": {
-        "name": "品名：穀香包種",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：不知春200g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_3_3": {
+        "image_url": "..\/img\/tea_menu\/Special_can_LR_WunShan.jpg",
+        "title": "穀香包種",
+        "text": "包種茶經烘焙轉化的穀香<br>品味樸實怡人的大地氣息",
+        "price": "NT.680",
+        "image_url2": "..\/img\/tea_menu\/Special_LR_WunShan.jpg",
+        "about": {
+            "name": "品名：穀香包種",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：不知春200g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_3_4":{
-      "image_url": "..\/img\/tea_menu\/Special_can_Taiwanese_black.jpg",
-      "title": "高山小葉種紅茶",
-      "text": "迷人的柑橘香和絲綢般的口感<br>是小茶栽堂人氣首選的茶品",
-      "price": "980 NTD",
-      "image_url2": "..\/img\/tea_menu\/Special_Taiwanese_black.jpg",
-      "about": {
-        "name": "品名：高山小葉種紅茶",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：高山小茶種紅茶 100g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_3_4": {
+        "image_url": "..\/img\/tea_menu\/Special_can_Taiwanese_black.jpg",
+        "title": "高山小葉種紅茶",
+        "text": "迷人的柑橘香和絲綢般的口感<br>是小茶栽堂人氣首選的茶品",
+        "price": "NT.980",
+        "image_url2": "..\/img\/tea_menu\/Special_Taiwanese_black.jpg",
+        "about": {
+            "name": "品名：高山小葉種紅茶",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：高山小茶種紅茶 100g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_4_1":{
-      "image_url": "..\/img\/tea_menu\/Aged_can_Taiwanese_oo.jpg",
-      "title": "二十年老烏龍",
-      "text": "豐富和諧的味覺層次<br>品味往昔的自然與人文",
-      "price": "1780 NTD",
-      "image_url2": "..\/img\/tea_menu\/Aged_Taiwanese_oo.jpg",
-      "about": {
-        "name": "品名：二十年老烏龍",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：二十年老烏龍 150g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_4_1": {
+        "image_url": "..\/img\/tea_menu\/Aged_can_Taiwanese_oo.jpg",
+        "title": "二十年老烏龍",
+        "text": "豐富和諧的味覺層次<br>品味往昔的自然與人文",
+        "price": "NT.1780",
+        "image_url2": "..\/img\/tea_menu\/Aged_Taiwanese_oo.jpg",
+        "about": {
+            "name": "品名：二十年老烏龍",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：二十年老烏龍 150g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_4_2":{
-      "image_url": "..\/img\/tea_menu\/Aged_can_TieGuanYin.jpg",
-      "title": "窖藏鐵觀音",
-      "text": "珍貴稀少的鐵觀音老茶<br>酸韻豐沛紮實",
-      "price": "1980 NTD",
-      "image_url2": "..\/img\/tea_menu\/Aged_TieGuanYin.jpg",
-      "about": {
-        "name": "品名：窖藏鐵觀音",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：窖藏鐵觀音 150g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_4_2": {
+        "image_url": "..\/img\/tea_menu\/Aged_can_TieGuanYin.jpg",
+        "title": "窖藏鐵觀音",
+        "text": "珍貴稀少的鐵觀音老茶<br>酸韻豐沛紮實",
+        "price": "NT.1980",
+        "image_url2": "..\/img\/tea_menu\/Aged_TieGuanYin.jpg",
+        "about": {
+            "name": "品名：窖藏鐵觀音",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：窖藏鐵觀音 150g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     },
-    "c_4_3":{
-      "image_url": "..\/img\/tea_menu\/Aged_can_DongDing_oo.jpg",
-      "title": "窖藏老凍頂",
-      "text": "未經覆焙的凍頂老茶<br>亮黃的茶湯閃耀台灣茶的昨日光輝",
-      "price": "2480 NTD",
-      "image_url2": "..\/img\/tea_menu\/Aged_DongDing_oo.jpg",
-      "about": {
-        "name": "品名：窖藏老凍頂",
-        "loc": "茶葉產地：台灣",
-        "spe": "規格：鋁箔真空包裝",
-        "weight": "淨重：窖藏老凍頂 150g",
-        "date": "有效日期：如包裝所示（年/月/日）",
-        "date2": "保存期限：2年",
-        "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
-        "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
-      }
+    "c_4_3": {
+        "image_url": "..\/img\/tea_menu\/Aged_can_DongDing_oo.jpg",
+        "title": "窖藏老凍頂",
+        "text": "未經覆焙的凍頂老茶<br>亮黃的茶湯閃耀台灣茶的昨日光輝",
+        "price": "NT.2480",
+        "image_url2": "..\/img\/tea_menu\/Aged_DongDing_oo.jpg",
+        "about": {
+            "name": "品名：窖藏老凍頂",
+            "loc": "茶葉產地：台灣",
+            "spe": "規格：鋁箔真空包裝",
+            "weight": "淨重：窖藏老凍頂 150g",
+            "date": "有效日期：如包裝所示（年/月/日）",
+            "date2": "保存期限：2年",
+            "other1": "保存條件：置於乾燥陰涼處，開封後請儘快沖泡飲用",
+            "other2": "安心宣言：本產品已投保三千萬產品責任險，並通過SGS檢驗合格"
+        }
     }
 
 
-  }
+}
