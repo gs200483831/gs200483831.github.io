@@ -6,6 +6,16 @@ body {
   min-width: 320px;
 }
 
+body h2 {
+  font-size: 36px;
+  letter-spacing: 0.25em;
+}
+
+body h3 {
+  font-size: 24px;
+  letter-spacing: 0.25em;
+}
+
 .row {
   margin: 0 !important;
 }
@@ -743,6 +753,12 @@ body {
   }
 }
 
+@media (max-width: 411px) {
+  .productText .blueline::before {
+    display: none;
+  }
+}
+
 .productText .blueline h3 {
   line-height: 200%;
 }
@@ -775,16 +791,6 @@ body {
   .productText {
     margin-left: 1%;
   }
-}
-
-.productText h2 {
-  font-size: 36px;
-  letter-spacing: 0.25em;
-}
-
-.productText h3 {
-  font-size: 24px;
-  letter-spacing: 0.25em;
 }
 
 .productText .margin-bottom {
