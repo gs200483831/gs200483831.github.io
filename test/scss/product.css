@@ -629,13 +629,9 @@ body h3 {
   margin-top: -100px !important;
 }
 
-.details .row {
-  padding: 98px 0px 0px 151px;
-}
-
 @media (max-width: 992px) {
-  .details .row {
-    padding-left: 100px;
+  #details {
+    margin-top: -50px !important;
   }
 }
 
