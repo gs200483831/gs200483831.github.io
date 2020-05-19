@@ -399,7 +399,10 @@ body {
     @media (max-width: 767px) {
       padding: 100px 0px 0px 80px;
     }
+    @media (max-width: 411px) {
+      padding: 100px 0px 0px 20px;
 
+    }
     @media (max-width: 320px) {
       padding: 100px 0px 0px 10px;
 
@@ -418,7 +421,10 @@ body {
       width: 30px;
       text-align: center;
       font-size: 25px;
-
+      @media (max-width: 411px) {
+        width: 100px;
+  
+      }
 
     }
     .product_list_1:hover, .product_list_2:hover, .product_list_3:hover, .product_list_4:hover {
@@ -427,6 +433,10 @@ body {
       text-align: center;
       transform: scale(1.5);
       color: #5F7E45;
+      @media (max-width: 411px) {
+        width: 100px;
+  
+      }
 
 
     }

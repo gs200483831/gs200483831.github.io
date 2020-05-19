@@ -415,6 +415,12 @@ body {
   }
 }
 
+@media (max-width: 411px) {
+  #main_product .about_padding {
+    padding: 100px 0px 0px 20px;
+  }
+}
+
 @media (max-width: 320px) {
   #main_product .about_padding {
     padding: 100px 0px 0px 10px;
@@ -432,6 +438,12 @@ body {
   font-size: 25px;
 }
 
+@media (max-width: 411px) {
+  #main_product .product_list .product_list_1, #main_product .product_list .product_list_2, #main_product .product_list .product_list_3, #main_product .product_list .product_list_4 {
+    width: 100px;
+  }
+}
+
 #main_product .product_list .product_list_1:hover, #main_product .product_list .product_list_2:hover, #main_product .product_list .product_list_3:hover, #main_product .product_list .product_list_4:hover {
   margin: 15px;
   width: 30px;
@@ -439,6 +451,12 @@ body {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   color: #5F7E45;
+}
+
+@media (max-width: 411px) {
+  #main_product .product_list .product_list_1:hover, #main_product .product_list .product_list_2:hover, #main_product .product_list .product_list_3:hover, #main_product .product_list .product_list_4:hover {
+    width: 100px;
+  }
 }
 
 #main_product .product_s {
