@@ -201,7 +201,6 @@ a h2 {
 .main {
     // animation: showHide 3s ease-in alternate ; 
     animation: show 10s ease-in;
-    animation: show 1s ease-in;
 }
 
 @keyframes show {
@@ -218,7 +217,6 @@ a h2 {
 
 #load {
     animation: hide 5s ease-in;
-    animation: hide 1s ease-in;
     background-color: #333;
     width: 100%;
     height: 100vh;

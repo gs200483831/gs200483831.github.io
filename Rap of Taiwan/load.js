@@ -9,4 +9,4 @@ setTimeout(function() {
     $('.logbox').addClass("d-none");
 
     $('body').removeClass("overflowhidden");
-}, 100);
+}, 5000);
