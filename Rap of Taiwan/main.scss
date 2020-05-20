@@ -4,7 +4,17 @@ a h2 {
     display: inline-block;
     text-decoration: none;
     position: relative;
+    background: #333;
+    /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, goldenrod, white);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, goldenrod, white);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, goldenrod, white);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, goldenrod, white);
+    /* Standard syntax (must be last) */
+    // background: -webkit-linear-gradient(left, goldenrod, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -149,10 +159,11 @@ body {
     }
 }
 
+
 html {
     scroll-behavior: smooth;
 }
-
+// loading動畫
 .main {
     // animation: showHide 3s ease-in alternate ; 
     animation: show 10s ease-in;
@@ -174,6 +185,7 @@ html {
     90% { opacity: 1; }
     100% { opacity: 0; }
 }
+// loading動畫
 // @keyframes showHide { 
 //     0% {width:0%} 
 
@@ -573,16 +585,33 @@ html {
 }
 
 .backTOtop {
-    background-image: url(https://cdn.onlinewebfonts.com/svg/img_367892.png);
-    background-size: cover;
+
     position: fixed;
     z-index: 999;
     width: 50px;
     height: 50px;
     bottom: 30px;
     right: 30px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 25px;
-    background-color: whitesmoke;
+    &:hover{
+        opacity: 0.5;
+    }
+    img{
+width: 100%;
+// &:hover{
+//     opacity: 0.5;
+// }
+    }
+    // background: #34495e;
+    // text-decoration: none;
+    // text-align: center;
+    // line-height: 50px;
+    // color: white;
+    // font-size: 50px;
+    // -webkit-text-fill-color:unset;
+    // -webkit-background-clip: unset;
+    // background: unset;
+
+    // border-radius: 50%;
+    // font-size: 25px;
+    // background-color: whitesmoke;
 }
