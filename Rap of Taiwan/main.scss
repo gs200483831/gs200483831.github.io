@@ -17,15 +17,12 @@ a h2 {
     // background: -webkit-linear-gradient(left, goldenrod, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     &:link {
         color: white;
     }
-
     &:visited {
         color: white;
     }
-
     &:hover {
         color: goldenrod;
         text-decoration: none;
@@ -33,7 +30,6 @@ a h2 {
         transition: 0.5s;
         // border-bottom: 2px solid blue;
     }
-
     // &:active {
     //     color: crimson;
     // }
@@ -45,7 +41,6 @@ a h2 {
     font-size: 1em;
     position: relative;
     transition: all 0.3s;
-
     &:before {
         content: "";
         width: 0;
@@ -56,7 +51,6 @@ a h2 {
         background: white;
         transition: all 0.5s;
     }
-
     &:hover {
         &:before {
             width: 100%;
@@ -66,6 +60,10 @@ a h2 {
             transition: all 0.3s;
         }
     }
+}
+
+button {
+    -webkit-appearance: unset;
 }
 
 // a::after {
@@ -98,13 +96,11 @@ a h2 {
     display: -webkit-flex;
 }
 
-
-.overflowhidden{
+.overflowhidden {
     overflow: hidden;
 }
 
 body {
-    
     margin: 0;
     max-width: 1920px;
     min-width: 320px;
@@ -120,91 +116,93 @@ body {
     overflow-wrap: break-word;
     word-break: break-all;
     white-space: normal;
-
-    @media (max-width: 411px) {
+    @media (max-width: 415px) {
         font-size: 16px;
         line-height: 24pt;
     }
-
     h1 {
         background: -webkit-linear-gradient(left, goldenrod, white);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 70px;
         margin: auto;
-
         @media (max-width: 768px) {
             font-size: 50px;
         }
-
-        @media (max-width: 411px) {
+        @media (max-width: 415px) {
             font-size: 30px;
         }
     }
-
     .lobster {
         font-family: 'Lobster', cursive;
-
         @media (max-width: 768px) {
             font-size: 50px;
         }
-
-        @media (max-width: 411px) {
+        @media (max-width: 415px) {
             font-size: 30px;
         }
     }
-
     .row {
         margin: 0;
     }
 }
 
-
 html {
     scroll-behavior: smooth;
 }
+
 // loading動畫
 .main {
     // animation: showHide 3s ease-in alternate ; 
     animation: show 10s ease-in;
-} 
-@keyframes show {
-    0%   { opacity: 0; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
 }
-#load{
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#load {
     animation: hide 5s ease-in;
-    background-color:#333; 
+    background-color: #333;
     width: 100%;
     height: 100vh;
     position: flex;
 }
+
 @keyframes hide {
-    0%   { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 // loading動畫
 // @keyframes showHide { 
 //     0% {width:0%} 
-
 //     100% {width:100%;} 
-
-
 .buttons a {
     font-size: 40px;
     width: 20%;
     margin: 1% 0;
-
     @media (max-width: 768px) {
         font-size: 22px;
     }
-
-    @media (max-width: 411px) {
+    @media (max-width: 415px) {
         font-size: 17px;
     }
-
     @media (max-width: 360px) {
         font-size: 12px;
     }
@@ -220,7 +218,6 @@ html {
     width: 100%;
     height: 150px;
     background-color: black;
-
     // h1{
     //     background: -webkit-linear-gradient(right,goldenrod, white);
     //     -webkit-background-clip: text;
@@ -229,8 +226,7 @@ html {
     @media (max-width: 768px) {
         height: 100px;
     }
-
-    @media (max-width: 411px) {
+    @media (max-width: 415px) {
         height: 60px;
     }
 }
@@ -256,11 +252,9 @@ html {
 
 .swiper-container {
     width: 100%;
-
     .swiper-slide img {
         width: 100%;
     }
-
     .text {
         padding: 2% 0 2% 0;
         width: 80%;
@@ -269,13 +263,11 @@ html {
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
     }
-
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
         transform: scale(1.1);
         filter: brightness(150%);
     }
-
     .swiper-pagination {
         transition: 1s opacity;
     }
@@ -299,7 +291,6 @@ html {
 .featureImgbox {
     justify-content: space-around;
     padding: 1% 0 0% 0;
-
     .featuretext {
         width: 350px;
         box-sizing: content-box;
@@ -308,7 +299,6 @@ html {
         // width: 100%;
         // padding: 35px 100px;
         padding: 2% 100px;
-
         // padding: 2% 0px;
         // padding: 2% 10% ;
         /* 去除bootstrap的box-sizing:border-box */
@@ -325,19 +315,16 @@ html {
     left: 0;
     right: 0;
     text-shadow: -1px -1px 10px rgb(51, 51, 51), 1px 1px 10px #333, 1px 1px 10px #333, -1px -1px 10px #333;
-
-    @media (max-width: 411px) {
+    @media (max-width: 415px) {
         width: 80%;
     }
 }
 
 .origins {
     justify-content: space-between;
-
     img {
         width: 50%;
     }
-
     .dj {
         background-image: url(./origins/DJ3.jpg);
         background-size: cover;
@@ -345,28 +332,24 @@ html {
         height: 100%;
         // opacity: 0.5;
     }
-
     .graffiti {
         background-image: url(./origins/graffitiBack2.jpg);
         background-size: cover;
         width: 50%;
         height: 100%;
     }
-
     .sd {
         background-image: url(./origins/SD4.jpg);
         background-size: cover;
         width: 50%;
         height: 100%;
     }
-
     .mc {
         background-image: url(./origins/MC1.jpg);
         background-size: cover;
         width: 50%;
         height: 100%;
     }
-
     .text {
         width: calc(700px + 10%);
         width: calc(80%);
@@ -374,12 +357,10 @@ html {
         // min-height: 658px;
         // background-color: gray;
     }
-
     .col-md-12,
     .col-lg-6 {
         padding: 0;
     }
-
     // .col-md-12{
     //     height: auto;
     // }
@@ -389,16 +370,13 @@ html {
             height: 70vh;
             order: 1;
         }
-
         img {
             order: 2;
         }
-
         .graffiti {
             width: 100%;
             height: 70vh;
         }
-
         .sd,
         .mc {
             width: 100%;
@@ -406,31 +384,25 @@ html {
             background-position: center;
         }
     }
-
     @media (max-width: 600px) {
-
         .dj,
         .sd,
         .mc,
         .graffiti {
             height: 80vh;
         }
-
         .text {
             padding-top: 50px;
             width: 70%;
         }
     }
-
-    @media (max-width: 411px) {
-
+    @media (max-width: 415px) {
         .dj,
         .sd,
         .mc,
         .graffiti {
             height: 60vh;
         }
-
         .text {
             width: 80%;
         }
@@ -444,10 +416,8 @@ html {
 .cultureSwiper {
     background-image: url(./back4.jpg);
     background-size: cover;
-
     .card {
         background-color: transparent;
-
         .card-body {
             background-color: rgba($color: #333, $alpha: 0.5);
         }
@@ -456,36 +426,29 @@ html {
 
 .culture {
     background-image: url(./back4.jpg);
-
     h1 {
         font-size: 40px;
     }
-
     img {
         width: 100%;
     }
-
     .cultureSample,
     .cultureFlow,
     .cultureRemix {
         background-color: rgba($color: #333, $alpha: 0.3);
         width: 30%;
-
         @media (max-width: 768px) {
             width: 100%;
         }
-
-        @media (max-width: 411px) {
+        @media (max-width: 415px) {
             width: 90.625%;
         }
     }
-
     .cultureSample .text,
     .cultureFlow .text,
     .cultureRemix .text {
         width: 80%;
     }
-
     .container-100 {
         max-width: 100%;
     }
@@ -494,7 +457,6 @@ html {
 .card {
     border: none;
     background-color: transparent;
-
     .card-body {
         background-color: rgba($color: #333, $alpha: 0.5);
         // background-color:transparent;
@@ -503,7 +465,7 @@ html {
 }
 
 .swiper-slide .card {
-    @media (max-width: 411px) {
+    @media (max-width: 415px) {
         padding-top: 10vh;
     }
 }
@@ -517,21 +479,18 @@ html {
     right: 0;
     text-shadow: -1px -1px 10px rgb(51, 51, 51), 1px 1px 10px #333, 1px 1px 10px #333, -1px -1px 10px #333;
     top: calc(50% - 15vw);
-
     @media (max-width: 600px) {
         top: 15%;
         width: 60%;
         font-size: 14px;
         line-height: 250%;
     }
-
-    @media (max-width: 411px) {
+    @media (max-width: 415px) {
         // top: 10%;
         // width: 65%;
         // font-size: 14px;
         line-height: 200%;
     }
-
     @media (max-width: 360px) {
         top: 10%;
         width: 70%;
@@ -550,16 +509,13 @@ html {
         color: goldenrod;
         -webkit-text-fill-color: unset;
     }
-
     h1 {
         font-size: 40px;
         margin: 5px auto 5px;
-
         @media (max-width: 360px) {
             font-size: 30px;
         }
     }
-
     .card-body {
         display: flex;
         flex-wrap: wrap;
@@ -570,36 +526,32 @@ html {
     @media (max-width: 600px) {
         font-size: 40px;
     }
-
-    @media (max-width: 411px) {
+    @media (max-width: 415px) {
         font-size: 30px;
     }
-
     @media (max-width: 376px) {
         font-size: 25px;
     }
-
     @media (max-width: 337px) {
         font-size: 16px;
     }
 }
 
 .backTOtop {
-
     position: fixed;
     z-index: 999;
     width: 50px;
     height: 50px;
     bottom: 30px;
     right: 30px;
-    &:hover{
+    &:hover {
         opacity: 0.5;
     }
-    img{
-width: 100%;
-// &:hover{
-//     opacity: 0.5;
-// }
+    img {
+        width: 100%;
+        // &:hover{
+        //     opacity: 0.5;
+        // }
     }
     // background: #34495e;
     // text-decoration: none;
@@ -610,7 +562,6 @@ width: 100%;
     // -webkit-text-fill-color:unset;
     // -webkit-background-clip: unset;
     // background: unset;
-
     // border-radius: 50%;
     // font-size: 25px;
     // background-color: whitesmoke;
