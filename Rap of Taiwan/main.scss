@@ -455,7 +455,7 @@ a h2 {
         .sd,
         .mc,
         .graffiti {
-            height: 80vh;
+            height: 90vh;
         }
         .text {
             padding-top: 50px;
@@ -463,11 +463,11 @@ a h2 {
         }
     }
     @media (max-width: 415px) {
-        .dj,
-        .sd,
-        .mc,
+        // .dj,
+        // .sd,
+        // .mc,
         .graffiti {
-            height: 60vh;
+            background-position: center;
         }
         .text {
             width: 80%;

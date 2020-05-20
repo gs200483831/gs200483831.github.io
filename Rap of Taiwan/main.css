@@ -492,7 +492,7 @@ a h2 {
   .origins .sd,
   .origins .mc,
   .origins .graffiti {
-    height: 80vh;
+    height: 90vh;
   }
   .origins .text {
     padding-top: 50px;
@@ -501,11 +501,8 @@ a h2 {
 }
 
 @media (max-width: 415px) {
-  .origins .dj,
-  .origins .sd,
-  .origins .mc,
   .origins .graffiti {
-    height: 60vh;
+    background-position: center;
   }
   .origins .text {
     width: 80%;
