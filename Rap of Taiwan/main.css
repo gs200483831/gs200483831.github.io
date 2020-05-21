@@ -72,7 +72,7 @@ a h2:hover:before {
   transition: all 0.3s;
 }
 
-button {
+[type=button], [type=reset], [type=submit], button {
   -webkit-appearance: none;
 }
 
