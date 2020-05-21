@@ -62,9 +62,10 @@ a h2 {
     }
 }
 
-// button {
-//     -webkit-appearance: unset;
-// }
+button {
+    -webkit-appearance: none;
+}
+// 消除IOS白框
 
 // a::after {
 //     border-radius: 1em;

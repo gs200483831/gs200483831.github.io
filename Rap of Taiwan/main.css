@@ -72,6 +72,10 @@ a h2:hover:before {
   transition: all 0.3s;
 }
 
+button {
+  -webkit-appearance: none;
+}
+
 .flex {
   display: flex;
   -ms-flex-wrap: wrap;
