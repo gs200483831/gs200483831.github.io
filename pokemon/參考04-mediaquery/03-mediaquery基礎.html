@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @charset "UTF-8";
+
+        * {
+            font-family: 微軟正黑體;
+            vertical-align: top;
+        }
+
+        .container {
+            font-size: 0;
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .block {
+            display: inline-block;
+            font-size: 20px;
+            box-sizing: border-box;
+            border: solid 3px black;
+            height: 200px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .block p {
+            font-size: 15px;
+        }
+
+        .block .icon {
+            width: 30%;
+            min-width: 150px;
+        }
+
+        .block .h4 {
+            text-align: center;
+        }
+
+        .sblock {
+            border: solid 2px black;
+            display: inline-block;
+            width: 30%;
+            margin: 0px 2px;
+        }
+
+        .sblock img {
+            width: 100%;
+            height: 200px;
+            background-color: #aaa;
+        }
+
+        .intro {
+            height: initial;
+        }
+
+        .a,
+        .g,
+        .intro {
+            width: 100%;
+        }
+
+        .b {
+            width: 70%;
+        }
+
+        .c,
+        .f {
+            width: 30%;
+        }
+
+        .d,
+        .e {
+            width: 35%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .b {
+                width: 100%;
+            }
+
+            .c,
+            .d,
+            .e,
+            .f {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+
+            .b,
+            .c,
+            .d,
+            .e,
+            .f {
+                width: 100%;
+            }
+
+            .sblock {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="block a">
+            <h4>RWD重新排版/指定比例尺寸% 與max-width/min-width</h4>
+        </div>
+        <div class="block b">
+            <h4>B</h4>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文</p>
+        </div>
+        <div class="block c">
+            <h4>C</h4>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文</p>
+        </div>
+        <div class="block d">
+            <h4>D</h4>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文</p>
+        </div>
+        <div class="block e">
+            <h4>E</h4>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文</p>
+        </div>
+        <div class="block f">
+            <h4>F</h4>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文</p>
+        </div>
+        <div class="block g">
+            <h4>G</h4>
+            <p>內文內文內文內文內文內文內文內文內文內文內文內文</p>
+        </div>
+    </div>
+</body>
+
+</html>

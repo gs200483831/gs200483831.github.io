@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: red;
+    }
+
+    /* 4個偽類要按照LvHa這個愛恨原則來排
+
+原文網址：https://kknews.cc/code/v9ebpa.html */
+
+    a:visited {
+        color: gold
+    }
+
+    /* .clear-fix {
+        clear: both;
+    } */
+
+    .all {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 微軟正黑體;
+    }
+
+    .nav {
+        width: 300px;
+        height: 100vh;
+        background-color: whitesmoke;
+        padding-top: 50px;
+        /* margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; */
+    }
+
+    .mbox {
+        width: 300px;
+        height: 100vh;
+        background-color: whitesmoke;
+        padding-top: 50px;
+    }
+
+    .slogan {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-left: 100px;
+    }
+
+    .mon1 {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-image: url(img/fire1.webp);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        left: 30px;
+    }
+
+    .mon1:hover {
+        background-image: url(img/004.gif);
+    }
+
+    .mon2 {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-image: url(img/water1.webp);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        left: 20px;
+    }
+
+    .mon2:hover {
+        background-image: url(img/007.gif);
+        height: 110px;
+    }
+
+    .mon3 {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-image: url(img/grass1.webp);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        left: 30px;
+    }
+
+    .mon3:hover {
+        background-image: url(img/001.gif);
+    }
+
+    p {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .type {
+        position: relative;
+        bottom: 100px;
+        left: 20px;
+        text-align: center;
+    }
+
+    .fire:hover {
+        font-size: 25px;
+        color: orange;
+    }
+
+    .water:hover {
+        font-size: 25px;
+        color: #77BBFF;
+    }
+
+    .grass{
+        left:30px;
+    }
+    .grass:hover {
+        font-size: 25px;
+        color: #558936;
+        left: 35px;
+    }
+
+    .active:active {
+        color: black
+    }
+
+    /* .visited:visited {
+        color: brown
+    } */
+    /* .lbox {} */
+    /* ul {
+        padding: 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    ul li {
+        background-color: white;
+        padding: 20px;
+    } */
+
+    .rbox {
+        width: calc(100% - 300px);
+        background-image: url(img/9.jpg);
+        background-size: 50%;
+        /* -.nav width */
+        height: 100vh;
+        padding-top: calc(50vh - 185px);
+        /* 250px為bigpic高的一半 */
+    }
+
+    .bigpic {
+        width: 1200px;
+        height: 370px;
+        background-color: cadetblue;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .pic1 {
+        width: 32%;
+        height: 100%;
+        background-image: url(img/fire1.gif);
+    }
+
+    .pic1:hover {
+        width: 36%;
+        height: 100%;
+        background-image: url(img/fire2.gif);
+        transition-duration: 1s;
+    }
+
+    .pic2 {
+        width: 32%;
+        height: 100%;
+        background-image: url(img/water1.gif);
+    }
+
+    .pic2:hover {
+        width: 36%;
+        height: 100%;
+        background-image: url(img/water2.gif);
+        background-position: center;
+        transition-duration: 1s;
+    }
+
+    .pic3 {
+        width: 32%;
+        height: 100%;
+        background-image: url(img/grass1.gif);
+    }
+
+    .pic3:hover {
+        width: 36%;
+        height: 100%;
+        background-image: url(img/grass2.gif);
+        background-size: cover;
+        transition-duration: 1s;
+    }
+
+    @media (max-width: 1500px) {
+        .nav {
+            background-color: rgb(40, 40, 40);
+        }
+        .slogan{
+            color: whitesmoke;
+        }
+
+        .active:active {
+        color: whitesmoke
+    }
+        .rbox {
+            background-image: url(img/3.jpg);
+        }
+
+        .bigpic {
+            width: 80%;
+            max-width: 500px;
+            align-content: space-between;
+            position: relative;
+        }
+
+        /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-content */
+        /* 分佈式對齊*/
+        /* align-content: space-between; /* 均勻分佈項目 */
+        /* 第一項與起始點齊平，
+        最後一項與終止點齊平 */
+        /* 右半邊的80%  */
+        .pic1 {
+            width: 100%;
+            height: 46%;
+            background-position: center;
+        }
+
+        /* 2%間距 */
+        .pic1:hover {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url(img/fire2.gif);
+            transition-duration: 1s;
+            background-position: top;
+            left: 0;
+            top: 0;
+        }
+
+        .pic2 {
+            width: 48%;
+            height: 50%;
+            background-size: cover;
+        }
+
+        .pic2:hover {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url(img/water2.gif);
+            background-position: center;
+            transition-duration: 1s;
+            left: 0;
+            bottom: 0;
+        }
+
+        .pic3 {
+            width: 48%;
+            height: 50%;
+            background-size: cover;
+        }
+
+        .pic3:hover {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url(img/grass2.gif);
+            background-position: center;
+            transition-duration: 1s;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .rbox {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(img/10.jpg);
+        }
+
+        /* unset
+            名如其意，unset 關鍵字我們可以簡單理解為不設置。其實，它是關鍵字  initial 和  inherit 的組合。
+
+            什麼意思呢？也就是當我們給一個CSS屬性設置了  unset 的話：
+
+            如果該屬性是默認繼承屬性，該值等同於 inherit
+            如果該屬性是非繼承屬性，該值等同於 initial */
+        .nav {
+            width: 100vw;
+            height: 100px;
+            padding-top: 0px;
+            /* margin-bottom: 50px; */
+            padding-top: unset;
+            display: flex;
+            justify-content: space-between;
+            color:rgb(40, 40, 40);
+        }
+
+        .logo {
+            position: relative;
+            margin-top: 25px;
+            width: 50px;
+            height: 50px;
+            right: 1px;
+        }
+
+        .slogan {
+            position: relative;
+            left: 10vw;
+            top: 20px;
+            margin: 0px;
+        }
+
+        #mbox {
+            width: 40%;
+            height: 100px;
+        }
+
+        .mon1 {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+            top: 20px;
+            left: 60px;
+        }
+
+        .mon2 {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 0 15px;
+            top: 20px;
+            left: 60px;
+        }
+
+        .mon2:hover {
+            height: 55px;
+        }
+
+        .mon3 {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-left: 5px;
+            top: 20px;
+            left: 60px;
+        }
+
+        a {
+            font-size: 0px;
+        }
+
+        /* 消除看不到的超連結長方形 */
+        .p768 {
+            font-size: 0px;
+            float: left;
+        }
+
+        .fire:hover {
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            top: 60px;
+            font-size: 5px;
+            color: orange;
+        }
+
+        .water:hover {
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            top: 60px;
+            font-size: 5px;
+            color: #77BBFF;
+        }
+
+        .grass:hover {
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            top: 60px;
+            font-size: 5px;
+            color: #558936;
+        }
+
+        .pic1 {
+            width: 100%;
+            height: 48%;
+        }
+
+
+
+        .pic2 {
+            width: 48%;
+            height: 50%;
+            background-size: cover;
+        }
+
+
+
+        .pic3 {
+            width: 48%;
+            height: 50%;
+            background-size: cover;
+        }
+
+
+    }
+
+
+
+    @media screen and (max-width: 620px) {
+        #mbox {
+            display: none;
+        }
+        .rbox{
+            padding: 0px;
+        }
+
+        .bigpic{
+            width: 100%;
+            max-width: 100vw;
+            height: 100%;
+        }
+        .pic1 {
+            display: none;
+            width: 100%;
+            height: 33.3%;
+            background-size: cover;
+        }
+
+        .mobilegif1{
+        width: 100%;
+        height: 33.3%;
+        background-image: url(img/fire1.gif);
+        background-size: cover;
+        }
+        .mobilegif1:hover{
+        width: 100%;
+        height: 33.3%;
+        background-image: url(img/fire2.gif);
+        background-size: cover;
+        transition-duration: 1s;
+        }
+
+
+        .mobilegif2{
+        width: 100%;
+        height: 33.3%;
+        background-image: url(img/water1.gif);
+        background-size: cover;
+        }
+        .mobilegif2:hover{
+        width: 100%;
+        height: 33.3%;
+        background-image: url(img/water2.gif);
+        background-size: cover;
+        transition-duration: 1s;
+        }
+        .mobilegif3{
+        width: 100%;
+        height: 33.3%;
+        background-image: url(img/grass1.gif);
+        background-size: cover;
+        }
+        .mobilegif3:hover{
+        width: 100%;
+        height: 33.3%;
+        background-image: url(img/grass2.gif);
+        background-size: cover;
+        transition-duration: 1s;
+        }
+
+        /* .pic1:hover {
+            width: 100%;
+            height: 33.3%;
+            background-image: url(img/fire2.gif);
+            background-position: center;
+            transition-duration: 1s;
+        } */
+        .pic2 {
+            display: none;
+            width: 100%;
+            height: 33.3%;
+        }
+        /* .pic2:hover {
+            width: 100%;
+            height: 33.3%;
+            background-image: url(img/water2.gif);
+            background-position: center;
+            transition-duration: 1s;
+            position:none;
+        } */
+        .pic3 {
+            display: none;
+            width: 100%;
+            height: 33.3%;
+        }
+        /* .pic3:hover {
+            width: 100%;
+            height: 33.3%;
+            background-image: url(img/grass2.gif);
+            background-position: center;
+            transition-duration: 1s;
+            
+            position:none;
+        } */
+        .mobilebox{
+            position:relative;
+            left: 50px;
+            top:25px;
+            height:45px;
+        }
+        .mobile1{
+            display: inline-block;
+            width: 43px;
+            height: 44px;
+            background-image: url(img/004.gif);
+            background-repeat: no-repeat;
+            margin-right: 5px;
+        }
+        .mobile2{
+            display: inline-block;
+            width: 41px;
+            height: 45px;
+            background-image: url(img/007.gif);
+            background-repeat: no-repeat;
+            margin-right: 5px;
+        }
+        .mobile3{
+            display: inline-block;
+            width: 39px;
+            height: 40px;
+            background-image: url(img/001.gif);
+            background-repeat: no-repeat;
+        }
+        .logo{
+            position: relative;
+            margin: 25px 0 25px 25px;
+            width: 50px;
+            height: 50px;
+            left:50px;
+        }
+        .slogan {
+            position: relative;
+            margin-right:100px;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 504px) {
+            .mobilebox{
+            position:relative;
+            left: 50px;
+            height:45px;
+            width: 150px;
+        }
+        .logo{
+            margin:auto;
+        }
+        .mobile1{
+
+            margin-right: 0px;
+        }
+        .mobile2{
+
+            margin-right: 0px;
+        }
+        .slogan {
+            margin-right:50px;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 375px) {
+            .mobilebox{
+            position:relative;
+            left: 10px;
+            height:45px;
+            width: 150px;
+        }
+        .logo{
+            display:inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 50px;
+        }
+        .slogan{
+            text-align: center;
+        }
+        /* .slogan{
+            position:absolute;
+            left:200px;
+        } */
+        .mobile1{
+
+            margin-right: 0px;
+        }
+        .mobile2{
+
+            margin-right: 0px;
+        }
+
+
+        }
+        }
+    }
+</style>
+
+<body>
+    <div class="all">
+        <div class="nav">
+            <div class="mobilebox">
+                <a href="https://wiki.52poke.com/wiki/%E5%B0%8F%E7%81%AB%E9%BE%99#.E8.BF.9B.E5.8C.96">
+                    <div class="mobile1"></div>
+                </a>
+                <a href="https://wiki.52poke.com/wiki/%E6%9D%B0%E5%B0%BC%E9%BE%9F#.E8.BF.9B.E5.8C.96">
+                    <div class="mobile2"></div>
+                </a>
+                <a href="https://wiki.52poke.com/wiki/%E5%A6%99%E8%9B%99%E7%A7%8D%E5%AD%90#.E8.BF.9B.E5.8C.96">
+                
+                    <div class="mobile3"></div>
+                </a>
+        </div>
+            <img class="logo logo768" src="img/ball.png" alt="">
+            <p class="slogan">最初のパートナー<br>First Partner Pokemon</p>
+
+
+
+            <div id="mbox">
+                <a href="https://wiki.52poke.com/wiki/%E5%B0%8F%E7%81%AB%E9%BE%99#.E8.BF.9B.E5.8C.96">
+                    <div class="mon1"></div>
+                    <!-- <img class="mon mon1" src="img/fire1.webp" alt=""> -->
+                    <p class="fire active visited type p768">小火龍家族</p>
+                </a>
+
+                <a href="https://wiki.52poke.com/wiki/%E6%9D%B0%E5%B0%BC%E9%BE%9F#.E8.BF.9B.E5.8C.96">
+                    <div class="mon2"></div>
+                    <!-- <img class="mon" src="img/water1.webp" alt=""> -->
+                    <p class="water active visited type p768">傑尼龜家族</p>
+                </a>
+                <a href="https://wiki.52poke.com/wiki/%E5%A6%99%E8%9B%99%E7%A7%8D%E5%AD%90#.E8.BF.9B.E5.8C.96">
+                    <div class="mon3"></div>
+                    <!-- <img class="mon" src="img/grass1.webp" alt=""> -->
+                    <p class="grass active visited type p768">妙蛙種子家族</p>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="rbox">
+
+            <div class="bigpic">
+                <div class="pic1"></div>
+                <div class="pic2"></div>
+                <div class="pic3"></div>
+                <div class="mobilegif1"></div>
+                <div class="mobilegif2"></div>
+                <div class="mobilegif3"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

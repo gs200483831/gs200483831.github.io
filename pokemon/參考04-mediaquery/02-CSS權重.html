@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 100px;
+            height: 100px;
+            background-color: #f22;
+        }
+
+        .box.border {
+            border: solid 1px blue;
+        }
+
+        .block .box {
+            width: 50px;
+            height: 50px;
+            background-color: #2ff !important;
+        }
+
+        .border {
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>h1</h1>
+    <h1>h1</h1>
+    <div class="block border">
+        <div style="background-color: blueviolet;" class="box border"></div>
+    </div>
+</body>
+</html>

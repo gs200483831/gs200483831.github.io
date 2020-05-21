@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            max-width:1170px;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+
+        .container div{
+            float: left;
+        }
+
+        .a{
+        width: 100%;
+        background-color: grey;
+        
+        }        
+
+        .b{
+        width:80%;
+        background-color:red; 
+        }
+
+        .c{
+        width:20%;
+        background-color:blue;
+
+        }
+        .d{
+        width:40%;
+        background-color:#000;
+
+        }
+        .e{
+        width:40%;
+        background-color:bisque;
+
+        }
+        .f{
+        width:20%;
+        background-color:brown;
+
+        }
+        .g{
+        width:100%;
+        background-color:green;
+        }
+
+        @media screen and (max-width: 1000px)
+    {       
+            .b{
+            width:100%;
+            }
+
+            .c,.d,.e,.f{
+            width:50%;
+            }
+    }
+
+    @media screen and (max-width: 512px)
+    {         
+        .b,.c,.d,.e,.f{
+                width:100%;
+            }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">
+            <h4>a</h4>
+        </div>
+        <div class="b">
+            <h4>b</h4>
+        </div>
+        <div class="c">
+            <h4>c</h4>
+        </div>
+        <div class="d">
+            <h4>d</h4>
+        </div>
+        <div class="e">
+            <h4>e</h4>
+        </div>
+        <div class="f">
+            <h4>f</h4>
+        </div>
+        <div class="g">
+            <h4>g</h4>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RWD-mission</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            background-color: burlywood;
+        }
+        
+        .clear-fix {
+            clear: both;
+        }
+        
+        .all {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .nav {
+            width: 300px;
+            height: 100vh;
+            background-color: blue;
+            padding-top: 250px;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        ul li {
+            padding: 10px 0;
+            background-color: brown;
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .content-Block {
+            width: calc(100% - 300px);
+            height: 100vh;
+            padding-top: calc(50vh - 250px);
+        }
+        
+        .texture-group {
+            width: 900px;
+            height: 500px;
+            background-color: chartreuse;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .texture {
+            width: 32.5%;
+            height: 100%;
+            background-color: cornsilk;
+        }
+        
+        .texture-2 {
+            width: 32.5%;
+            height: 100%;
+            background-color: cornsilk;
+        }
+        
+        @media (max-width: 1280px) {
+            .texture-group {
+                /* width: 600px; */
+                width: 80%;
+                max-width: 520px;
+                min-width: 470px;
+                align-content: space-between;
+            }
+            .texture {
+                width: 100%;
+                height: 49%;
+            }
+            .texture-2 {
+                width: 49%;
+                height: 49%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content-Block {
+                width: 100%;
+                height: 100vh;
+                padding-top: unset;
+            }
+            .nav {
+                width: 100%;
+                height: 100px;
+                padding-top: unset;
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .texture-group {
+                max-width: unset;
+                min-width: 550px;
+            }
+            .logo {
+                margin: unset;
+            }
+            ul li {
+                display: inline-block;
+            }
+            .menu {
+                padding-top: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .nav {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                padding-right: 80px;
+            }
+            .texture-group {
+                width: 100%;
+                height: unset;
+                min-width: unset;
+            }
+            .texture {
+                margin-bottom: 20px;
+                height: 300px;
+            }
+            .texture-2 {
+                width: 100%;
+                margin-bottom: 20px;
+                height: 300px;
+            }
+            .menu {
+                width: 80px;
+                height: 100px;
+                background-color: yellow;
+                position: relative;
+            }
+            .menu ul {
+                display: none;
+                position: absolute;
+                top: 100px;
+                left: 0px;
+            }
+            .menu:hover ul {
+                display: block;
+            }
+            .logo {
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="nav">
+            <div class="logo">我是LOGO</div>
+            <div class="menu">
+                <ul>
+                    <a href="">
+                        <li>AAAA</li>
+                    </a>
+                    <a href="">
+                        <li>BBBB</li>
+                    </a>
+                    <a href="">
+                        <li>CCCC</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="content-Block">
+            <div class="texture-group">
+                <div class="texture"></div>
+                <div class="texture-2"></div>
+                <div class="texture-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        font #navbar {
+            width: 100%;
+            position: relative;
+            z-index: 99;
+            background-color: rgba(245, 245, 245, 0.5);
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-left: 100px;
+            float: left;
+        }
+        
+        .nav_items {
+            position: absolute;
+            right: 0;
+            top: 25%;
+            /* top: 50%;
+            transform: translateY(-50%); */
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav_items a {
+            text-decoration: none;
+        }
+        
+        .nav_btn {
+            display: inline-block;
+            border: solid 1px black;
+            padding: 10px 20px;
+            margin-right: 30px;
+            background-color: #26e;
+            color: #eee;
+            border-radius: 5px;
+        }
+        
+        #jumbotron {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-image: url("img/banner.png");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        #jumbotron .bigtitle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            color: #eee;
+            background-color: rgba(12, 12, 12, 0.8);
+            padding: 10px 18px;
+        }
+        
+        #text_block {
+            padding: 50px 100px;
+            text-align: center;
+        }
+        
+        #text_block p {
+            text-align: left;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        
+        #bgimg1 {
+            width: 100%;
+            height: 30vh;
+            background-image: url("img/bgimg1.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+        
+        #bgimg2 {
+            width: 100%;
+            height: 30vh;
+            background-image: url("img/bgimg2.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+        
+        #text_area {
+            padding: 50px 100px;
+            background-color: #222
+        }
+        
+        #text_area p {
+            font-size: 18px;
+            color: #eee;
+        }
+        
+        .smalltitle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="#jumbotron">
+            <img class="logo" src="img/logo.jpg" alt="">
+        </a>
+        <ul class="nav_items">
+            <a href="#text_block">
+                <li class="nav_btn">A</li>
+            </a>
+            <a href="#bgimg1">
+                <li class="nav_btn">B</li>
+            </a>
+            <a href="#bgimg2">
+                <li class="nav_btn">C</li>
+            </a>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div id="jumbotron">
+        <h1 class="bigtitle">
+            SCROLL DOWN
+        </h1>
+    </div>
+
+    <div id="text_block">
+        <h2 class="bigtitle">PARALLAX DEMO</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae placeat temporibus dolor doloribus dolorum aliquam voluptatibus quo, enim corporis natus consectetur mollitia ipsum minus saepe autem quos recusandae atque vel nemo optio. Accusantium voluptate,
+            iusto quibusdam ipsum distinctio error molestiae id enim eligendi facilis ratione, illum sint non aliquam in modi incidunt. Reprehenderit cum ullam blanditiis accusantium cupiditate possimus laborum, repellendus est commodi alias natus consequatur
+            quibusdam expedita eaque sit quia rem aut at? Impedit harum eligendi esse quasi dolorem et adipisci doloremque excepturi unde id fugiat, officia hic, dolor officiis consequatur ad ut deleniti ex. Consectetur ipsam accusamus ducimus.
+        </p>
+    </div>
+
+    <div id="bgimg1">
+        <h1 class="smalltitle">LESS HEIGHT</h1>
+    </div>
+    <div id="text_area">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, amet?</p>
+    </div>
+
+    <div id="bgimg2">
+        <h1 class="smalltitle">SCROLL UP</h1>
+    </div>
+    <div id="text_area">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, amet?</p>
+    </div>
+
+    <div id="jumbotron">
+        <h1 class="bigtitle">
+            COOL!
+        </h1>
+    </div>
+</body>
+
+</html>
