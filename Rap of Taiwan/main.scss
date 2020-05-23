@@ -62,12 +62,14 @@ a h2 {
     }
 }
 
-[type=button], [type=reset], [type=submit], button {
+[type=button],
+[type=reset],
+[type=submit],
+button {
     -webkit-appearance: none!important;
 }
 
 // 消除IOS白框
-
 // a::after {
 //     border-radius: 1em;
 //     border-top: .1em solid #2F56B0;
@@ -603,6 +605,12 @@ a h2 {
     @media (max-width: 337px) {
         font-size: 16px;
     }
+}
+
+.end h2 {
+    font-family: 微軟正黑體;
+    width: 100%;
+    text-align: center;
 }
 
 .backTOtop {

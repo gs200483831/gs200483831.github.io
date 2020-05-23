@@ -72,7 +72,10 @@ a h2:hover:before {
   transition: all 0.3s;
 }
 
-[type=button], [type=reset], [type=submit], button {
+[type=button],
+[type=reset],
+[type=submit],
+button {
   -webkit-appearance: none !important;
 }
 
@@ -672,6 +675,12 @@ a h2 {
   .footer h1 {
     font-size: 16px;
   }
+}
+
+.end h2 {
+  font-family: 微軟正黑體;
+  width: 100%;
+  text-align: center;
 }
 
 .backTOtop {
