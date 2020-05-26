@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS4</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        #nav {
+            position: fixed;
+            z-index: 99;
+            width: 100vw;
+        }
+        
+        .logo {
+            width: 256px;
+            height: 53px;
+            /* display: inline-block; */
+            margin: 20px 0px 0 20px;
+            float: left;
+            background-image: url("img/ps4.png");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute
+        }
+        
+        .nav_items {
+            margin: 0px 25px 0 0;
+            padding: 0;
+            float: right;
+        }
+        
+        .nav_btn {
+            display: inline-block;
+            border: dotted 2px white;
+            padding: 20px;
+            border-radius: 20px;
+            color: white;
+            margin: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .ff {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("img/FF7.jpg");
+            background-attachment: fixed;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+        /* .ps4 {
+            position: absolute;
+            width: 1280px;
+            height: 267px;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("img/ps4.png");
+            background-size: 30%;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+        
+        a {
+            color: orange;
+        }
+        
+        p {
+            position: absolute;
+            padding: 0px 10px 0px 10px;
+            font-size: 40px;
+            margin: 0;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: orange;
+            text-decoration: none;
+            font-family: Times;
+        }
+        
+        h1 {
+            position: absolute;
+            padding: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            COLOR: white;
+            font-size: 50px;
+        }
+        
+        .chn1 {
+            position: absolute;
+            top: 75%;
+            transform: translate(-50%, 0%);
+            font-family: 微軟正黑體;
+            color: orange;
+            font-size: 40px;
+        }
+        
+        .chn2 {
+            position: absolute;
+            top: 85%;
+            transform: translate(-50%, 0%);
+            font-family: 微軟正黑體;
+            color: crimson;
+            font-weight: bolder;
+            -webkit-text-stroke: 1px white;
+            font-size: 40px;
+        }
+        
+        .bar {
+            width: 100vw;
+            height: 154px;
+            background-color: rgba(31, 31, 31, .85);
+            position: relative;
+        }
+        
+        .chn3 {
+            position: absolute;
+            font-family: 微軟正黑體;
+            font-size: 26px;
+            bottom: -75%;
+            right: 0;
+            color: #ffffff;
+        }
+        
+        .mh {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("img/mh.jpg");
+            background-attachment: fixed;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gw {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("img/gw.jpg");
+            background-attachment: fixed;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <a href="https://www.playstation.com/cht-tw/">
+            <div class="logo"></div>
+        </a>
+
+        <ul class="nav_items">
+            <a href="#ff">
+                <li class="nav_btn">
+                    FINAL FANTASY VII REMAKE
+                </li>
+            </a>
+            <a href="#mh">
+                <li class="nav_btn">
+                    <span style="text-transform:uppercase">Monster Hunter World</span>
+                </li>
+            </a>
+            <a href="#gw">
+                <li class="nav_btn ">
+                    <span style="text-transform:uppercase">god of war</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div id="ff" class="ff">
+        <h1>ARE YOU READY PLAY A GAME?</h1>
+        <a href="https://store.playstation.com/zh-hant-tw/product/HP0082-CUSA16170_00-ASIAFULLGAME0000 " style="text-decoration:none ">
+            <p>FINAL FANTASY VII REMAKE
+                <br>
+                <p class="chn1 ">04.10 經典重現</p>
+                <br>
+                <p class="chn2 ">售價 NT$1790</p>
+        </a>
+    </div>
+
+
+    <div class="bar ">
+        <p class="chn3 ">
+            1997年於PlayStation®發售的FINAL FANTASY VII，如今加入多種新因子重生為「全新故事」。指令式戰鬥融合操作直覺的動作系統，衍生出更豐富的戰略性。遊戲畫面則運用20年前不可能實現的技術，打造出身歷其境的FFVII世界。
+        </p>
+    </div>
+
+    <div id="mh" class="mh">
+        <h1>ARE YOU READY PLAY A GAME?</h1>
+        <a href="https://store.playstation.com/zh-hant-tw/product/HP0102-CUSA09554_00-ASIAPLACEHOLDER0 " style="text-decoration:none ">
+            <p><span style="text-transform:uppercase">Monster Hunter World: Iceborne</span></p>
+            <br>
+            <p class="chn1 ">銷售破百萬 全新大型DLC</p>
+            <br>
+            <p class="chn2 ">PS PLUS 會員免費</p>
+        </a>
+    </div>
+
+
+    <div class="bar ">
+        <p class="chn3 ">
+            狩獵, 就是本能! 在系列最新作品「Monster Hunter: World」裡, 地形和環境生物, 甚至魔物的生態系統都能被利用, 用一切手段挑戰巨大的魔物。在新建構的「Monster Hunter: World」中, 可以體驗到你一直期盼的極致獵人生活。
+        </p>
+    </div>
+
+
+
+    <div id="gw" class="gw">
+        <h1>ARE YOU READY PLAY A GAME?</h1>
+        <a href="https://store.playstation.com/zh-hant-tw/product/HP9000-CUSA07413_00-00000000GODOFWAR" style="text-decoration:none ">
+            <p><span style="text-transform:uppercase">god of war</span></p>
+            <br>
+            <p class="chn1 ">戰神再臨 諸神的黃昏</p>
+            <br>
+            <p class="chn2 ">售價 NT$590</p>
+        </a>
+    </div>
+
+    <div class="bar ">
+        <p class="chn3 ">
+            向奧林匹斯諸神尋求復仇的事已過多年，克雷多斯現在居住於北歐神話的國度裡，與眾神和怪物過著凡人的生活。在這個嚴酷無情的世界裡，他必須為了生存而奮鬥．．．並將此生存之道傳授給自己的親生兒子。
+        </p>
+    </div>
+
+</body>
+
+</html>

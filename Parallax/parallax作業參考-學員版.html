@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        @media (max-width: 900px) {
+            h1 {
+                font-size: large;
+            }
+            h2 {
+                font-size: medium;
+            }
+            h3 {
+                font-size: small;
+            }
+            span {
+                font-size: smaller;
+            }
+            p {
+                font-size: x-small;
+            }
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .img {
+            width: 100vw;
+            height: 100vh;
+            float: left;
+            position: relative;
+            background-position: center;
+        }
+        
+        .text {
+            width: 100vw;
+            float: left;
+            text-align: center;
+            position: relative;
+            background-color: black;
+            color: white;
+            padding: 8vw;
+        }
+        
+        h1 {
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%);
+            padding: 2vw;
+            background-color: rgba(255, 255, 255, 0.527);
+        }
+        
+        span {
+            font-size: larger;
+            color: white;
+            display: block;
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%);
+            padding: 2vw;
+            background-color: rgba(0, 0, 0, 0.692);
+        }
+        
+        p {
+            text-align: left;
+        }
+        
+        #img1 {
+            background-image: url(https://i2.wp.com/www.u-acg.com/wp-content/uploads/2019/07/%E5%85%AC%E4%B8%BB%E9%80%A3%E7%B5%905.jpg?resize=1920%2C1572);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #text1 {}
+        
+        #img2 {
+            background-image: url(https://cdn2.ettoday.net/images/4203/e4203037.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #text2 {}
+        
+        #img3 {
+            background-image: url(https://images.zi.org.tw/gbyhn/2018/09/03131939/1535951978-ba89f0978bf2cae450bb263bd03d2bff-1200x669.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #text3 {}
+        
+        #img4 {
+            background-image: url(https://i2.wp.com/www.u-acg.com/wp-content/uploads/2019/07/%E5%85%AC%E4%B8%BB%E9%80%A3%E7%B5%905.jpg?resize=1920%2C1572);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #flag {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        
+        #navbar {
+            position: fixed;
+            z-index: 99;
+            width: 100%;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            /* display: inline-block; */
+            float: left;
+        }
+        
+        .nav_items {
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        
+        .nav_btn {
+            display: inline-block;
+            border: 1px solid #000;
+            padding: 30px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="logo"></div>
+        <ul class="nav_items">
+            <a href="#flag">
+                <li class="nav_btn">
+                    A
+                </li>
+            </a>
+            <a href="#text1">
+                <li class="nav_btn">
+                    B
+                </li>
+            </a>
+            <a href="#text2">
+                <li class="nav_btn">
+                    C
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div id="img1" class="img">
+        <div>
+            <h1>SCROLL DOWN</h1>
+        </div>
+    </div>
+    <div id="text1" class="text">
+        <h2>超異域公主連結 Re:Dive</h2>
+        <p>《超異域公主連結 Re:Dive》（日語：プリンセスコネクト! Re:Dive）是一款由Cygames所製作的奇幻風格角色扮演手機遊戲，前身為2015年至2016年間營運的《公主連結》。本遊戲除了在日本上市外，也與海外業者合作推出包含簡體中文（由bilibili代理營運）、繁體中文（由台灣So-net代理營運）、韓文（Kakao Game）等版本。</p>
+    </div>
+    <div id="img2" class="img">
+        <div>
+            <span>簡介與特色</span>
+        </div>
+    </div>
+    <div id="text2" class="text">
+        <div>
+            <p>主要特色為動畫方式表現的劇情，由Wit Studio所製作，並結合腳本家日日日、作曲家田中公平。玩家可將蒐集到的角色，組成五人編隊，依前衛、中衛、後衛三排與NPC交戰；而玩家也可組織公會，除了與NPC對戰外，也能與其他玩家進行對戰。</p>
+        </div>
+    </div>
+    <div id="img3" class="img">
+        <div>
+            <span>角色總覽</span>
+        </div>
+    </div>
+    <div id="text3" class="text">
+        <div>
+            <p>介紹公主連結 Re:Dive中出現的人物，過去於CyberAgent營運的遊戲「公主連結」中多數角色也繼承至此部作品中。</p>
+        </div>
+    </div>
+    <div id="flag"></div>
+    <div id="img4" class="img">
+        <div>
+            <h1>TO BE CONTINUE</h1>
+        </div>
+    </div>
+</body>
+
+</html>
