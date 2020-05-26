@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Melaka馬六甲動物園</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        /* SWIPER區 */
+        
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            margin: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .swiper-container {
+            width: 100%;
+        }
+        
+        a {
+            font-size: 20px;
+        }
+        
+        .navbar {
+            background-color: #638413!important;
+            background-image: url(https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6648348/910/604/m2/fpnw/wm1/xnallbafsjpcgyallipzataz9qm4r3h3roler4mwsmvmrjlmmvzb2kuccdn7mos7-.jpg?1562649173&s=29f2214129e23659d7353fdc43ba860c);
+            background-size: cover;
+        }
+        
+        #navbarSupportedContent a {
+            color: rgba(255, 255, 255, 1);
+        }
+        /* .navinside{
+            background: #BDD925; 
+            border-radius: 10%;
+        } */
+        
+        .navbar-brand img {
+            border-radius: 50%;
+        }
+        
+        .swiper-pagination {
+            transition: 1s opacity;
+        }
+        /* SWIPER區 */
+        
+        .banner .img {
+            width: 100%;
+        }
+        
+        .page2backimg {
+            color: rgba(255, 255, 255, 1);
+            text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black, 0 -1px 5px black;
+        }
+        
+        .tigerskin {
+            background-image: url(https://cdn.europosters.eu/image/1300/wall-murals/tiger-skin-208x146-cm-130g/m2-vlies-non-woven-i45442.jpg);
+            background-size: cover;
+        }
+        
+        .elephantskin {
+            background-image: url(https://previews.123rf.com/images/anankkml/anankkml1010/anankkml101000110/8253589-elephant-skin.jpg);
+        }
+        
+        .peacockskin {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDPF5jmS1FJPdGzlfE1MrkAAb6TW1ZDMqNPPvW77CHwDTr3n22&usqp=CAU);
+            background-size: cover;
+        }
+        /* .card-body{
+            background-image: url(tigerskin);
+        } */
+        
+        .title {
+            width: 100%;
+            justify-content: center;
+            /* height: 50%; */
+            font-size: 3rem;
+            color: cornsilk;
+            text-shadow: -1px 0 10px goldenrod, 0 1px 10px goldenrod, 1px 0 10px goldenrod, 0 -1px 10px goldenrod;
+        }
+        
+        .page2backimg {
+            background-image: url(https://d3avoj45mekucs.cloudfront.net/rojakdaily/media/letchumy-tamboo/daily%20stories/gr.jpg);
+        }
+        
+        .row {
+            justify-content: space-between;
+        }
+        
+        .gutters-15 {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        
+        .gutters-15>.col,
+        .gutters-15>[class*=col-] {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        
+        .ptpb60 {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+        .card {
+            text-align: center;
+        }
+        
+        .btn-primary {
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+            ;
+        }
+        /* a .btn {
+            margin: auto;
+            justify-content: center;
+        } */
+        
+        .text {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            color: rgb(235, 233, 233);
+            text-shadow: -1px 0 5px #638413, 0 1px 5px #638413, 1px 0 5px #638413, 0 -1px 5px #638413;
+            margin: auto;
+            width: calc(50% + 10vw);
+            height: calc(15%);
+            font-size: 22px;
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); */
+        }
+        /*         
+        .col-5 {
+            background-color: aqua;
+        } */
+        
+        .page4 {
+            background-image: url(https://www.gamereactor.cn/media/58/planetzoo_3125873b.jpg);
+            color: rgba(255, 255, 255, 1);
+            text-shadow: -1px 0 5px black, 0 1px 5px black, 1px 0 5px black, 0 -1px 5px black;
+        }
+        
+        .backTOtop {
+            background-image: url(https://cdn.onlinewebfonts.com/svg/img_367892.png);
+            background-size: cover;
+            position: fixed;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            bottom: 30px;
+            right: 30px;
+            border-radius: 20%;
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 100px;
+            background-image: url(https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6648348/910/604/m2/fpnw/wm1/xnallbafsjpcgyallipzataz9qm4r3h3roler4mwsmvmrjlmmvzb2kuccdn7mos7-.jpg?1562649173&s=29f2214129e23659d7353fdc43ba860c);
+            background-size: cover;
+            background-position: bottom;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        @media (min-width: 1600px) {
+            .container {
+                max-width: 1400px;
+            }
+            /* .swiper-container {
+                max-width: 1400px;
+            } */
+        }
+        
+        @media (min-width: 1800px) {
+            /* .swiper-container {
+                max-width: 1600px;
+            } */
+            .container {
+                max-width: 1600px;
+            }
+        }
+        
+        @media (min-width: 1920px) {
+            /* .swiper-container {
+                width: 100%;
+            } */
+            .container {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav id="top" class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="navinside  container pt-0 pb-0 mx-auto  ">
+            <a class="navbar-brand" href="http://www.zoomelaka.gov.my/">
+                <img src="LOGO.jpg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">VISITOR'S INFO </a>
+
+
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+
+
+
+    <div class="backTOtop">
+        <a href="#top">
+            <img src="https://cdn.onlinewebfonts.com/svg/img_367892.png" alt="">
+        </a>
+    </div>
+
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class='w-100' src="https://images.alphacoders.com/667/thumb-1920-667539.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide ">
+                <img class='w-100' src="https://www.gamerwater.com/data/post/201911/14/3844/x/1573706478622463.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide ">
+                <img class='w-100' src="https://images.wallpaperscraft.com/image/tiger_wild_cat_predator_78882_1920x1080.jpg" alt="">
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class='page2backimg'>
+        <div class="container ptpb60">
+            <div class="row ">
+                <div class="d-flex title ">Zoo Melaka</div>
+            </div>
+            <div class="row ">
+                <div class="col-4 gutters-15">
+                    <div class="card">
+                        <img src="https://s28164.pcdn.co/files/Malayan-Tiger-0155-2199-1280x720.jpg" class="card-img-top" alt="...">
+                        <div class="card-body tigerskin">
+                            <h5 class="card-title">
+                                MALAYAN TIGER</h5>
+                            <p class="card-text">
+
+                            </p>
+                            <a href="#" class="btn btn-primary">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 gutters-15">
+                    <div class="card">
+                        <img src="https://p2.bahamut.com.tw/B/2KU/50/32fce9bbf31083550a969a19ca164mm5.JPG" class="card-img-top" alt="...">
+                        <div class="card-body elephantskin">
+                            <h5 class="card-title">
+                                ELEPHANT</h5>
+                            <p class="card-text">
+
+                            </p>
+                            <a href="#" class="btn btn-primary">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 gutters-15">
+                    <div class="card">
+                        <img src="https://c.wallhere.com/photos/7e/26/1920x1080_px_indian_Japan_Peafowl_zoo-1646225.jpg!d" class="card-img-top" alt="...">
+                        <div class="card-body peacockskin">
+                            <h5 class="card-title">PEACOCK</h5>
+                            <p class="card-text">
+
+                            </p>
+                            <a href="#" class="btn btn-primary">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="overflow-hidden container-fluid position-relative px-0 " data-parallax="scroll" data-bleed="100" data-speed="0.1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Melaka_Zoo_and_Night_Safari.jpg" width="100%" alt="">
+
+        <div class="text position-absolute ">
+            ZOO MELAKA, ESTABLISHED SINCE 1963 UNDER THE CARE OF MELAKA STATE GOVERNMENT HAS RECENTLY BEEN PRIVATIZED IN THE EARLY 2013 UNDER THE NEW NAME OF MELAKA ZOO AND NIGHT SAFARI. This 54 acres second largest zoo in Malaysia under the new Majlis Perbandaran
+            Hang Tuah Jaya will see a transformation of the zoo to an open concept in animal exhibit, enhancing wildlife education programme, animal breeding and conservation programme and making the zoo to be a recreational area. The ever popular Night
+            Safari will be enhanced to give visitors a unique opportunity in observing the behaviour of nocturnal animals in their natural habitats. At Melaka Zoo & Night Safari, it is not just about a walk through our animals but a whole new wildlife
+            discovery with our various programs suitable from pre-schoolers to university students and corporate companies.
+        </div>
+    </div>
+
+    <div class="page4">
+        <section class="container ptpb60">
+            <div class="row">
+                <div class="col-12 col-md-5 p-0 mb-5">
+                    <img src="http://www.zoomelaka.gov.my/_include/img/profile/zoomanji01.jpg" class=w-100 alt="">
+                </div>
+                <div class="col-12 col-md-5 p-0 d-flex align-items-top" style="font-size: 22px;">
+                    This rugged outdoor activity is for the wild challengers not only for the university and college students but also for corporate companies seeking extreme fun in the zoo! Mind you, Zoomanji program is also an ideal team building gateway where communication
+                    and teamwork will be put to test. We welcome you to Zoomanji for massive adrenaline challenges! For more details on our Zoomanji program please contact our Education Department.
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 col-md-5 p-0 order-1 order-md-2">
+                    <img src="http://www.zoomelaka.gov.my/_include/img/profile/zoomanji02.jpg" class=w-100 alt="">
+                </div>
+
+                <div class="col-12 col-md-5 p-0 d-flex align-items-center order-1" style="font-size: 22px;">
+                    This rugged outdoor activity is for the wild challengers not only for the university and college students but also for corporate companies seeking extreme fun in the zoo! Mind you, Zoomanji program is also an ideal team building gateway where communication
+                    and teamwork will be put to test. We welcome you to Zoomanji for massive adrenaline challenges! For more details on our Zoomanji program please contact our Education Department.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        MELAKA ZOO ©2020
+    </div>
+
+    <script src="parallax.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- Swiper JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
